@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/lroa28">
-    <img src="./img/Logo Ox.png" alt="Logo" width="80" height="80">
+    <img src="./img/Logo Ox.png img-fluid rounded-circle" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Desarrollo Web</h3>
@@ -82,8 +82,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -206,9 +204,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - overflow.x.lcr@gmail.com
+Overflow X "Lucrecia Roa" - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) - overflow.x.lcr@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/lroa28)
+Projects Link GitHub: [https://github.com/lroa28]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
