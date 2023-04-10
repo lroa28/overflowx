@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/lroa28">
-    <img src="./img/Logo Ox.png img-fluid rounded-circle" alt="Logo" width="80" height="80">
+    <img class="img-fluid rounded-circle" src="./img/Logo Ox.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Desarrollo Web</h3>
