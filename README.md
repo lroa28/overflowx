@@ -196,7 +196,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 * Projects Link GitHub: [https://github.com/lroa28]
 
-* [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514]
+* [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
