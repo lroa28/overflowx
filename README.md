@@ -192,11 +192,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Overflow X "Lucrecia Roa" - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) - E-mail: overflow.x.lcr@gmail.com
+* Overflow X "Lucrecia Roa" - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) - E-mail: overflow.x.lcr@gmail.com
 
-Projects Link GitHub: [https://github.com/lroa28]
+* Projects Link GitHub: [https://github.com/lroa28]
 
-[![LinkedIn]][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514]
+* [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
