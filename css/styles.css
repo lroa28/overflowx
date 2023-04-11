@@ -37,6 +37,11 @@ a {
 	border-radius: 10px;
 }
 
+.logo {
+	width: 5rem;
+	height: 7rem;
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -75,7 +80,7 @@ h1{
 }
 
 .banner-image {
-	background-image: url('/img/2.jpeg');
+	background-image: url('../img/2.jpeg');
 	background-size: cover;
 }
 
@@ -100,7 +105,7 @@ h1{
 	display: block;
 	top: 0px;
 	position: relative;
-	max-width: 100%;
+	max-width: 90%;
 	height: 80%;
 	background-color: #cccccc39;
 	border-radius: 4px;
@@ -117,6 +122,10 @@ h1{
 	  top: -4px;
 	  border: 1px solid #cccccc;
 	  background-color: rgba(109, 94, 225, 0.467);
+	  /* https://cssgenerator.org/box-shadow-css-generator.html */
+	  box-shadow: 2px -1px 5px 15px  rgba(67, 66, 66, 0.515);
+      -webkit-box-shadow: 2px -1px 5px 15px  rgba(70, 180, 217, 0.477);
+      -moz-box-shadow: 2px -1px 5px 15px rgb(48, 46, 46);
 	}
   
    .card:before {
@@ -267,6 +276,13 @@ h1{
 
 	h1{
 		color: white;
+		font-size: 1em;
+		margin: 0.47em 0;
+	}
+
+	.logo {
+		width: 3rem;
+		height: 4rem;
 	}
 }
 
@@ -274,6 +290,8 @@ h1{
 @media (min-width: 768px) and (max-width: 991px) {
 	h1{
 		color: white;
+		font-size: 1em;
+		margin: 0.47em 0;
 	}
 
 }
