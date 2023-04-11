@@ -24,9 +24,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 -->
-[![LinkedIn][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514/]
-
-
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514/]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -36,7 +34,7 @@
   </a>
 
   <h3 align="center">Web Development</h3>
-<!-- 
+
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
@@ -50,7 +48,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
- -->
+
 
 
 <!-- TABLE OF CONTENTS -->
