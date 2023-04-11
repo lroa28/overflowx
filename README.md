@@ -24,7 +24,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 -->
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514/]
+[![LinkedIn][https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514/]
 
 
 
@@ -35,8 +35,8 @@
     <img class="img-fluid rounded-circle" src="./img/Logo Ox.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Desarrollo Web</h3>
-
+  <h3 align="center">Web Development</h3>
+<!-- 
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
@@ -50,7 +50,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
-
+ -->
 
 
 <!-- TABLE OF CONTENTS -->
@@ -84,16 +84,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Web Development Service.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +100,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Bootstrap-transparent-navbar
-Bootstrap 5 - Responsive Transparent Navbar,  Fixed Top on Scroll Web Page
+Bootstrap 5.3 - Responsive Transparent Navbar,  Fixed Top on Scroll Web Page
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -184,9 +175,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/branch`)
+3. Commit your Changes (`git commit -m 'Add some branch'`)
+4. Push to the Branch (`git push origin feature/branch`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -205,7 +196,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Overflow X "Lucrecia Roa" - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) - overflow.x.lcr@gmail.com
+Overflow X "Lucrecia Roa" - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) - E-mail: overflow.x.lcr@gmail.com
 
 Projects Link GitHub: [https://github.com/lroa28]
 
