@@ -192,7 +192,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-* Instagram - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) - 
+* Instagram - [@IG](https://instagram.com/overflow_x_arg?igshid=ZDdkNTZiNTM=) 
 
 * E-mail - overflow.x.lcr@gmail.com
 
