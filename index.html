@@ -69,10 +69,11 @@
 // ------------------------------------------->	      
 
 <!-- Card 1 MEDIDA -->      
-<div class="row py-5 px-5">
+<div class="seccion_card">
+  <div class="row">
 
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <div class="card mb-5 shadow-sm">
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="card mb-5 shadow-sm">
         <img src="img/3.png" class="img-fluid" />
 
         <div class="card-body">
@@ -90,7 +91,7 @@
     </div>
 
 <!-- Card 2 ULT TECNOLOGIA -->         
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="card mb-5 shadow-sm">
         <img src="img/4.webp" class="img-fluid" />
 
@@ -112,7 +113,7 @@
     </div>
 
 <!-- Card 3 VELOCIDAD -->         
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="card mb-5 shadow-sm">
         <img src="img/5.png" class="img-fluid" />
 
@@ -131,7 +132,7 @@
     </div>
 
 <!-- Card 4 RESPONSIVE -->         
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="card mb-5 shadow-sm">
         <img src="img/6.jpeg" class="img-fluid" />
 
@@ -148,6 +149,7 @@
       </div>
     </div>
 
+  </div>
 </div>
 <!-------------------------------------------//
 // ----------------FOOTER--------------------//
@@ -155,25 +157,40 @@
 
 <!-- https://mdbootstrap.com/snippets/standard/mdbootstrap/2885140?view=side -->
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-flex">
 
-    <footer class="bg-dark text-white text-center">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
+<footer class="bg-dark text-white text-center">
+
+<!-- Contact -->    
+    <div class="row py-4" >
+
+      <a name="contact"></a>
+      <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-12 text-center">
+        <h5 style="color: grey;">Contact <i class="fas fa-envelope"></i> </h5>
+        <a class="footer__quickLinks__a" style="color: grey;" href=""><a href="mailto:overflow.x.lcr@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">overflow.x.lcr@gmail.com</a> </a>
+      </div>
+        
+    </div>
+
+<!-- Grid container Subscribe-->
+    <div class="container-flex p-4 pb-0">
       <!-- Section: Form -->
       <section class="">
         <form action="">
+
           <!--Grid row-->
           <div class="row d-flex justify-content-center">
+
             <!--Grid column-->
             <div class="col-auto">
               <p class="pt-2">
                 Sign up for our newsletter</p>
             </div>
             <!--Grid column-->
-  
+
+          <div class="row d-flex justify-content-center"> 
+          
             <!--Grid column-->
-            <div class="col-md-5 col-12">
+            <div class="col-auto">
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form5Example2" class="form-control" placeholder="Email address"/>
@@ -189,21 +206,17 @@
               </button>
             </div>
             <!--Grid column-->
+          
           </div>
           <!--Grid row-->
         </form>
       </section>
       <!-- Section: Form -->
-    </div>
-    <!-- Grid container -->
 
-<!-- Contact -->    
-    <div class="row " >
-      <a name="contact"></a>
-      <div class="col-lg-12 text-center">
-        <h5 style="color: grey;">Contact: </h5><a class="footer__quickLinks__a" style="color: grey;" href=""><i class="fas fa-envelope"></i> <a href="mailto:overflow.x.lcr@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">overflow.x.lcr@gmail.com</a> </a>
-      </div>
-    </div>
+<!-- Fin Grid container Subscribe-->
+
+
+    <!-- Developer -->
     <hr>
     <div class="text-center text-danger p-2 bg-dark">
       Developer by Overflow X - 'Lucrecia Cecilia Roa' 
@@ -212,22 +225,18 @@
       © 2023 Copyright
     </div>
     </div>
+<!-- Fin Developer -->
 
-
-
-
-    <!--Botón Arriba-->
+<!--Botón Arriba-->
  <div class="go-top-container redondo">
     <div>
       <button class="go-top-button"><i class="fas fa-chevron-up"></i></button>
     </div>
 </div>
 
-  </footer>
-    
-</div>
-<!-- End of .container -->
-  
+
+</footer>
+
 
 <!-------------------------------------------//
 // ----------------SCRIPTS-------------------//
