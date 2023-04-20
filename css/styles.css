@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-body {
+.body {
 	font-family: 'Open Sans', sans-serif;
 	width: 100vw;
 	height: 100vw;
@@ -15,18 +15,21 @@ body {
 	overflow-x: hidden;
 }
 
-a {
+.a {
 	text-decoration: none;
 }
 
 .container {
 	width: 100%;
-	/*max-width: 800px;*/
+	max-width: 800px;
 	margin: auto;
 	/*min-height: 100vh;*/
 }
 
 /*=============== NAVBAR ================*/  
+.navbar {
+	width: 100vw;
+}
 
 .navbar-nav a:hover{
     background-color: black;
@@ -88,6 +91,8 @@ h1:hover{
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
+	width: 100vw;
+	height: 100vh;
 }
 
 .bg-dark{
@@ -96,16 +101,17 @@ h1:hover{
 	background-color: rgb(11, 48, 48);
 }
 
-.btn-dev {
+.btn-acercademi {
 	padding: 10px 12px;
 	color: #fff;
 	background-color: black;
+	border-radius: 10px;
 	font-size: 1.5em;
 	/*font-weight: bold;*/
 	text-decoration: none;
 }
 
-.btn-dev:hover {
+.btn-acercademi:hover {
 	color: #fff;
 	background-color: red;
 	font-style: italic;
@@ -217,9 +223,9 @@ h1:hover{
 /* GOTOP */
 .go-top-container {
 	position: fixed;
-	bottom: 2rem;
+	bottom: 1rem;
 	right: 2rem;
-	width: 3rem;
+	width: 1rem;
 	height: 2rem;
 	z-index: -1;
 }
@@ -284,17 +290,18 @@ h1:hover{
 ========================================================================================================*/
 /* col-xs */
 @media (max-width: 767px) {
-.nav-item .nav-link {
+.nav-link {
 	text-align: end;
 }
 
-.nav-item .nav-link :hover{
+.nav-link :hover{
     font-style: italic; 
 	background-color: rgba(0, 0, 0, 0.503) ;
 	border-radius: 10px;
 }
 
 .banner-image {
+	background-size:cover;
     background-position: center center;
 }
 
