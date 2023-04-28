@@ -116,6 +116,10 @@ h1:hover{
 	background-color: rgb(17, 28, 235);
 }*/
 
+.span__gris {
+	font-size: 2rem!important;
+}
+
 .btn-acercademi {
 	padding: 10px 12px;
 	color: #fff;
@@ -286,7 +290,7 @@ h1:hover{
 	transform: translate(-50%, -50%) scale(1);
 }
 
-  
+
 @keyframes popup {
 	0% {
 		width: 0;
@@ -308,7 +312,7 @@ h1:hover{
 /* col-xs */
 @media (max-width: 767px) {
 .nav-link {
-	text-align: end;
+	text-align: center;
 }
 
 .nav-link :hover{
@@ -323,9 +327,13 @@ h1:hover{
 }
 
 h1{
-		color: white;
-		font-size: 1em;
-		margin: 0.47em 0;
+	color: white;
+	font-size: 1em;
+	margin: 0.47em 0;
+}
+
+.span__gris {
+	font-size: 1rem!important;
 }
 
 .logo {
@@ -336,19 +344,22 @@ h1{
 .seccion_card {
 	display: flex;
 	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
 }
 
 .card {
-	width: 90%;
+	width: 100vw;
 	height: 90%;
 	border-radius: 4px	
 }
 
 .card img{
-		width: 90%;
-		height: 90%;
-		object-fit: cover;
-		object-position: top;
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+	object-position: top;
 }
 
 /* GOTOP */
@@ -413,7 +424,6 @@ h1{
 }
 
 /* col-md */
-
 @media (min-width: 992px) {
 	.bg-dark{
 	background-color:transparent!important;
@@ -421,15 +431,12 @@ h1{
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
 }
 
 /* col-lg */
-@media (min-width: 1200px) {
-    
+@media (min-width: 1200px) {    
 }
 
 /*col-sm col-md col-lg*/
 @media (min-width: 768px) {
-
 }
