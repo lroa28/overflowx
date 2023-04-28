@@ -363,6 +363,10 @@ h1{
 	object-position: top;
 }
 
+.bg-dark{
+	background-color:transparent!important;
+	}
+
 /* GOTOP */
 .go-top-container {
 	position: fixed;
@@ -416,20 +420,221 @@ h1{
 
 /* col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
+	.nav-link {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.503) ;
+	}
+	
+	.nav-link :hover{
+		font-style: italic; 
+		background-color: rgba(0, 0, 0, 0.503) ;
+		border-radius: 10px;
+	}
+	
+	.banner-image {
+		background-size:cover;
+		background-position: center center;
+	}
+	
 	h1{
 		color: white;
 		font-size: 1em;
 		margin: 0.47em 0;
 	}
-
-}
+	
+	.span__gris {
+		font-size: 1rem!important;
+	}
+	
+	.logo {
+			width: 3rem;
+			height: 4rem;
+	}
+	
+	.seccion_card {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+	}
+	
+	.card {
+		width: 100vw;
+		height: 90%;
+		border-radius: 4px	
+	}
+	
+	.card img{
+		width: 90%;
+		height: 90%;
+		object-fit: cover;
+		object-position: top;
+	}
+	
+	.bg-dark{
+		background-color:transparent!important;
+		}
+	
+	/* GOTOP */
+	.go-top-container {
+		position: fixed;
+		bottom: 2rem;
+		right: 3rem;
+		width: 3rem;
+		height: 2rem;
+		z-index: -1;
+	}
+	  
+	.go-top-button {
+		width: 5px;
+		height: 5px;
+		border-radius: 200%;
+		cursor: pointer;
+		transition: 0.2s;
+		position: absolute;
+		top: 40%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		display: block;
+		background-color: rgba(128, 128, 128, 0.488);
+	}
+	  
+	.go-top-button i {
+		position: absolute;
+		font-size: 1.7rem;
+		top: 48%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		color: red;
+		transition: 0.2s;
+	}
+	  
+	.show {
+		z-index: 10;
+	}
+	  
+	.show .go-top-button {
+		animation: popup 0.3s ease-in-out;
+		width: 5.6rem;
+		height: 5.6rem;
+		z-index: 11;
+	}
+	  
+	.show i {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	}
 
 /* col-md */
 @media (min-width: 992px) {
+	.nav-link {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.503) ;
+	}
+	
+	.nav-link :hover{
+		font-style: italic; 
+		background-color: rgba(0, 0, 0, 0.503) ;
+		border-radius: 10px;
+	}
+	
+	.banner-image {
+		background-size:cover;
+		background-position: center center;
+	}
+	
+	h1{
+		color: white;
+		font-size: 1em;
+		margin: 0.47em 0;
+	}
+	
+	.span__gris {
+		font-size: 1rem!important;
+	}
+	
+	.logo {
+			width: 3rem;
+			height: 4rem;
+	}
+	
+	.seccion_card {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+	}
+	
+	.card {
+		width: 100vw;
+		height: 90%;
+		border-radius: 4px	
+	}
+	
+	.card img{
+		width: 90%;
+		height: 90%;
+		object-fit: cover;
+		object-position: top;
+	}
+	
 	.bg-dark{
-	background-color:transparent!important;
-	}	
-}
+		background-color:transparent!important;
+		}
+	
+	/* GOTOP */
+	.go-top-container {
+		position: fixed;
+		bottom: 2rem;
+		right: 3rem;
+		width: 3rem;
+		height: 2rem;
+		z-index: -1;
+	}
+	  
+	.go-top-button {
+		width: 5px;
+		height: 5px;
+		border-radius: 200%;
+		cursor: pointer;
+		transition: 0.2s;
+		position: absolute;
+		top: 40%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		display: block;
+		background-color: rgba(128, 128, 128, 0.488);
+	}
+	  
+	.go-top-button i {
+		position: absolute;
+		font-size: 1.7rem;
+		top: 48%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		color: red;
+		transition: 0.2s;
+	}
+	  
+	.show {
+		z-index: 10;
+	}
+	  
+	.show .go-top-button {
+		animation: popup 0.3s ease-in-out;
+		width: 5.6rem;
+		height: 5.6rem;
+		z-index: 11;
+	}
+	  
+	.show i {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 }
