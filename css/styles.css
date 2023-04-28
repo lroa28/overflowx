@@ -313,6 +313,7 @@ h1:hover{
 @media (max-width: 767px) {
 .nav-link {
 	text-align: center;
+	background-color: rgba(0, 0, 0, 0.503) ;
 }
 
 .nav-link :hover{
