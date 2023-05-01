@@ -46,7 +46,7 @@
 	width: 100vw;
 }
 
-.navbar-nav a:hover{
+.navbar-nav li a:hover{
     background-color: rgb(15, 127, 142);
     /*text-decoration: underline ;*/
     font-size: 25px!important;
@@ -102,7 +102,7 @@ h1:hover{
 }
 
 .banner-image {
-	background-image: url('../img/2.jpeg');
+	background-image: url('../img/3.2.jpg');
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
