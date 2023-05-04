@@ -52,7 +52,7 @@
 
 .navbar-nav li a:hover{
     /*box-shadow: 2px -1px 5px 15px  rgba(70, 180, 217, 0.477);*/
-	background-color: rgba(143, 228, 236, 0.941);
+	background-color: rgb(143, 228, 236);
     /*text-decoration: underline ;*/
     font-size: 23px!important;
     transition: all 1s ease-out;
