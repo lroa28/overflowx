@@ -52,7 +52,7 @@
 
 .navbar-nav li a:hover{
     /*box-shadow: 2px -1px 5px 15px  rgba(70, 180, 217, 0.477);*/
-	background-color:  rgba(70, 180, 217, 0.477);
+	background-color: rgba(143, 228, 236, 0.941);
     /*text-decoration: underline ;*/
     font-size: 23px!important;
     transition: all 1s ease-out;
@@ -124,7 +124,7 @@ h1:hover{
 }*/
 
 .span__herramientas {
-	font-size: calc(20px + 1vw);
+	font-size: calc(18px + 1vw);
 	color: black;
 	font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
@@ -270,7 +270,7 @@ h1:hover{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: rgba(128, 128, 128, 0.488);
+	background-color: black;
 }
   
 .go-top-button i {
@@ -279,7 +279,7 @@ h1:hover{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: skyblue;
+	color: rgba(143, 228, 236, 0.941);
 	transition: 0.2s;
 }
   
@@ -331,7 +331,10 @@ h1:hover{
 }
 
 .span__herramientas {
-	font-size: calc(18px + 1vw);
+	font-size: calc(16px + 1vw);
+	color: black;
+	font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
 }
 
 
@@ -400,7 +403,7 @@ h1:hover{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: skyblue;
+	color:rgba(143, 228, 236, 0.941);
 	transition: 0.2s;
 }
   
