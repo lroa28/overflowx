@@ -133,11 +133,12 @@ h1:hover{
 .btn-acercademi {
 	padding: 10px 12px;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.318);
+	background-color: rgba(0, 0, 0, 0.565);
 	border-radius: 10px;
 	font-size: 1.5em;
 	/*font-weight: bold;*/
 	text-decoration: none;
+	border-style: dashed;
 }
 
 .btn-acercademi:hover {
@@ -339,6 +340,12 @@ h1:hover{
 
 .cuadrado{
 	background-color:rgba(4, 4, 4, 0.505);
+	border-style: dashed;
+	border-radius: 5px;
+}
+
+.btn-acercademi {
+	background-color: rgba(0, 0, 0, 0.565);
 	border-style: dashed;
 }
 
