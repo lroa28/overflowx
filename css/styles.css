@@ -57,7 +57,7 @@
     font-size: 23px!important;
     transition: all 1s ease-out;
 	font-style: italic;
-	/*border-radius: 10px;*/
+	border-radius: 3px;
 }
 
 .logo {
@@ -123,8 +123,8 @@ h1:hover{
 	background-color: rgb(17, 28, 235);
 }*/
 
-.span__gris {
-	font-size: calc(12px + 1vw);
+.span__herramientas {
+	font-size: calc(20px + 1vw);
 	color: black;
 	font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
@@ -279,7 +279,7 @@ h1:hover{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: red;
+	color: skyblue;
 	transition: 0.2s;
 }
   
@@ -328,6 +328,10 @@ h1:hover{
 .logo {
 		width: 3rem;
 		height: 4rem;
+}
+
+.span__herramientas {
+	font-size: calc(18px + 1vw);
 }
 
 
@@ -387,7 +391,7 @@ h1:hover{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: rgba(128, 128, 128, 0.488);
+	background-color: rgba(47, 42, 42, 0.67);
 }
   
 .go-top-button i {
@@ -396,7 +400,7 @@ h1:hover{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: red;
+	color: skyblue;
 	transition: 0.2s;
 }
   
