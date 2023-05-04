@@ -337,6 +337,10 @@ h1:hover{
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
 }
 
+.cuadrado{
+	background-color:rgba(4, 4, 4, 0.505);
+	border-style: dashed;
+}
 
 /* Cards */
 .seccion_card {
