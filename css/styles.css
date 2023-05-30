@@ -1,4 +1,6 @@
 /*=============== GLOBALES ================*/  
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -46,6 +48,14 @@
 	width: 100vw;
 }
 
+.marca {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem!important;
+	font-weight: bold;
+	text-shadow: 0 0 15px whitesmoke, 0 0 15px #33333b;
+}
+
+
 .navbar-nav li a{ /* no funciona*/
 	text-decoration-color: black;
 }
@@ -65,9 +75,9 @@
 	height: 3.5rem;
 }
 
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––EFECTO DE ROTACIÓN DEL LOGO–––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––– */
 .rotate {
 	-webkit-animation: rotate 5s normal linear infinite;
 	animation: rotate 5s normal linear infinite;
@@ -97,17 +107,8 @@
   }
 
 /*=============== BANNER ================*/
-h1{
-	text-decoration: none ;
-	color: antiquewhite;
-	/* font-size: calc(0.2rem + 3vw);*/
-}
 
-h1:hover{
-	font-style: italic;
-	/*text-decoration: underline ;*/
-}
-
+/* ----- Banner -----*/
 .banner-image {
 	background-image: url('../img/3.2.jpg');
 	background-size:cover;
@@ -115,6 +116,9 @@ h1:hover{
 	background-attachment: fixed;
 	width: 100vw;
 	height: 100vh;
+	transition: all .1s ease-out;
+	animation: banner-image 28s infinite linear;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 /*.bg-dark{ no esta funcionando en ningun bg esta prop
@@ -123,6 +127,36 @@ h1:hover{
 	background-color: rgb(17, 28, 235);
 }*/
 
+@keyframes banner-image{
+	0%, 29%{
+		background-image: url('../img/3.1.jpg');
+		opacity: 1.5;
+	}
+	30%,69%{
+		background-image: url('../img/3.2.jpg');
+		opacity: 1.5;
+	}
+	70%,100%{
+		background-image: url('../img/3.3.jpg');
+		opacity: 1.5;
+	}
+}
+
+/* ----- H1 Titulo DESARROLLO WEB -----*/
+h1{
+	text-decoration: none ;
+	color: red;
+	/* color: antiquewhite; */
+	/* font-size: calc(0.2rem + 3vw);*/
+	font-style: italic;
+}
+
+.ml3 { 
+	font-weight: 800;
+	font-size: 3.5em;
+}
+
+/* H3 Span Herramientas*/
 .span__herramientas {
 	font-size: calc(18px + 1vw);
 	color: black;
@@ -130,6 +164,7 @@ h1:hover{
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
 }
 
+/* Boton acerca de mi */
 .btn-acercademi {
 	padding: 10px 12px;
 	color: #fff;
@@ -276,7 +311,7 @@ h1:hover{
   
 .go-top-button i {
 	position: absolute;
-	font-size: 1.7rem;
+	font-size: 2.5rem;
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
@@ -320,6 +355,10 @@ h1:hover{
 ========================================================================================================*/
 /* col-xs */
 @media (max-width: 420px) {
+
+.ml3 {
+	font-size: 2.5em;
+}
 
 .banner-image {
 	background-size:cover;
