@@ -15,6 +15,7 @@
 	margin: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
+	font-family: "Montserrat", sans-serif;
 }
 
 .main {
@@ -25,7 +26,6 @@
 }
 
 .body {
-	font-family: 'Open Sans', sans-serif;
 	width: 100vw;
 	height: 100vh;
 	overflow-y: auto;
@@ -34,6 +34,11 @@
 
 .a {
 	text-decoration: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p h1 h2 h3 h4 h5 h6{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -49,24 +54,22 @@
 }
 
 .marca {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem!important;
+	font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem!important;
 	font-weight: bold;
-	text-shadow: 0 0 15px whitesmoke, 0 0 15px #33333b;
+	text-shadow: 0 0 15px whitesmoke, 0 0 15px #060606;
 }
 
-
-.navbar-nav li a{ /* no funciona*/
-	text-decoration-color: black;
+.navbar-nav li a{ 
+	font-size: 25px!important;
+	font-family: "Montserrat", sans-serif;
 }
 
 .navbar-nav li a:hover{
     /*box-shadow: 2px -1px 5px 15px  rgba(70, 180, 217, 0.477);*/
 	background-color: rgb(143, 228, 236);
     /*text-decoration: underline ;*/
-    font-size: 23px!important;
     transition: all 1s ease-out;
-	font-style: italic;
 	border-radius: 3px;
 }
 
@@ -110,7 +113,6 @@
 
 /* ----- Banner -----*/
 .banner-image {
-	background-image: url('../img/3.2.jpg');
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -121,25 +123,38 @@
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
-/*.bg-dark{ no esta funcionando en ningun bg esta prop
+/*.bg-dark { no esta funcionando en ningun bg esta prop 
 	z-index: 20;
 	width: 100%;
 	background-color: rgb(17, 28, 235);
 }*/
 
 @keyframes banner-image{
-	0%, 29%{
-		background-image: url('../img/3.1.jpg');
-		opacity: 1.5;
+	0%{
+		/* background-image: url('../img/3.1.jpg'); */
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.1.jpg');
 	}
-	30%,69%{
-		background-image: url('../img/3.2.jpg');
-		opacity: 1.5;
+	25%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.1.jpg');
 	}
-	70%,100%{
-		background-image: url('../img/3.3.jpg');
-		opacity: 1.5;
+	26%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.1.jpg');
 	}
+	50%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.1.jpg');
+	}
+	51%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.3.jpg');
+	}
+	75%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.3.jpg');
+	}
+	76%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.3.jpg');
+	}
+	100%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.3.jpg');
+	}	
 }
 
 /* ----- H1 Titulo DESARROLLO WEB -----*/
@@ -151,24 +166,25 @@ h1{
 	font-style: italic;
 }
 
-.ml3 { 
+.ml3 { /* para efecto del h1*/
 	font-weight: 800;
 	font-size: 3.5em;
 }
 
 /* H3 Span Herramientas*/
 .span__herramientas {
-	font-size: calc(18px + 1vw);
+	font-size: calc(16px + 1vw);
 	color: black;
 	font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+	font-family: "Montserrat", sans-serif;
 }
 
 /* Boton acerca de mi */
 .btn-acercademi {
 	padding: 10px 12px;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.565);
+	background-color: rgba(0, 0, 0, 0.455);
 	border-radius: 10px;
 	font-size: 1.5em;
 	/*font-weight: bold;*/
@@ -178,85 +194,105 @@ h1{
 
 .btn-acercademi:hover {
 	color: #fff;
-	background-color: red;
+	background-color:red;
 	font-style: italic;
 }  
 
 /*=============== Cards ================*/
 .seccion_card {
-	padding: 1rem 1rem 1rem 1rem;
+	padding: 2rem 0rem 2rem 0rem;
 	justify-content: center;
 	align-items: center;
 }
 
 .card {
-	display: block;
-	top: 0px;
-	position: relative;
-	max-width: 80%;
-	height: 80%;
-	border-radius: 4px;
-	padding: 32px 32px;
-	margin: 12px;
-	text-decoration: none;
-	z-index: 0;
-	overflow: hidden;
-	border: 1.5px outset #cccccc;
-	/* align-items: center;*/
-	align-content: center;	
+    position: relative;
+    width: 500px;
+    height: 450px;
+    margin: 20px;
 }
-   
-.card:hover {
-	  transition: all 0.2s ease-out;
-	  top: -4px;
-	  border: 1px solid #cccccc;
-	  background-color: rgba(143, 228, 236, 0.941);
-	  /* https://cssgenerator.org/box-shadow-css-generator.html */
-	  box-shadow: 2px -1px 5px 15px  rgba(67, 66, 66, 0.515);
-      -webkit-box-shadow: 2px -1px 5px 15px  rgba(70, 180, 217, 0.477);
-      -moz-box-shadow: 2px -1px 5px 15px rgb(48, 46, 46);
-}
-  
-.card:before {
-	  content: "";
-	  position: absolute;
-	  z-index: -1;
-	  top: -16px;
-	  right: -16px;
-	  background: #010101;
-	  height: 32px;
-	  width: 32px;
-	  border-radius: 32px;
-	  transform: scale(2);
-	  transform-origin: 50% 50%;
-	  transition: transform 0.15s ease-out;
-}
-  
-.card:hover:before {
-	  transform: scale(2.15);
-	  /* https://cssgenerator.org/box-shadow-css-generator.html */
-	  box-shadow: 2px -1px 5px 15px  rgba(2, 2, 2, 0.515);
-      -webkit-box-shadow: 2px -1px 5px 15px  rgba(101, 96, 96, 0.948);
-      -moz-box-shadow: 2px -1px 5px 15px rgb(13, 12, 12);
-}
-  
-.card__img {
-    max-height: 450px;
-	max-width: 400px;
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
 }
 
-.card p {
-	text-align: center;
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
 }
 
-.card-title {
-	text-align: center;
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	object-position: center;
 }
 
-/*-----------------------------------------*/
-/*-------------- FOOTER-------------------*/
-/*----------------------------------------*/
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    line-height: 55px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(143, 228, 236);
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 45px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+	font-weight:bold ;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+	font-family: "Montserrat", sans-serif;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*----------------------------------*/
+/*-------------- FOOTER-------------*/
+/*----------------------------------*/
 .footer {
 	padding: 4rem 0 1rem 0!important;
 }
@@ -269,6 +305,7 @@ h1{
 		text-decoration: none;
 		color: white;
 		font-size: 20px;
+		font-family: "Montserrat", sans-serif;
 }
 	
 .footer__quickLinks__a:hover {
@@ -315,7 +352,7 @@ h1{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(143, 228, 236, 0.941);
+	color: red;
 	transition: 0.2s;
 }
   
@@ -333,7 +370,6 @@ h1{
 .show i {
 	transform: translate(-50%, -50%) scale(1);
 }
-
 
 @keyframes popup {
 	0% {
@@ -355,6 +391,10 @@ h1{
 ========================================================================================================*/
 /* col-xs */
 @media (max-width: 420px) {
+
+.marca {
+	font-size: 2rem!important;
+}
 
 .ml3 {
 	font-size: 2.5em;
@@ -399,23 +439,89 @@ h1{
 }
 
 .card {
-	max-width: 100%;
-	height: 100%;
-	border-radius: 4px;
-	padding: 32px 24px;
-	margin: 12px;
-	text-decoration: none;
-	z-index: 0;
-	border: 1.5px outset #cccccc;
-	/* align-items: center;*/
-	align-content: center;	
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
 }
 
-.card__img{
-    max-height: 350px;
-	max-width: 300px;
-	object-fit: cover;
-	object-position: top;
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	object-position: center;
+}
+
+.card .front h3 {
+    position: absolute;
+	font-size: 15px;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    line-height: 55px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+	font-family: "Montserrat", sans-serif;
+	
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(143, 228, 236);
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 35px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+	font-weight:bold ;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
 
 .bg-dark{
@@ -453,7 +559,7 @@ h1{
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color:rgba(143, 228, 236, 0.941);
+	color:red;
 	transition: 0.2s;
 }
   
@@ -476,6 +582,191 @@ h1{
 /* col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
 
+	.marca {
+		font-size: 2rem!important;
+	}
+	
+	.ml3 {
+		font-size: 2.5em;
+	}
+	
+	.banner-image {
+		background-size:cover;
+		background-position: center center;
+	}
+	
+	.logo {
+			width: 3rem;
+			height: 4rem;
+	}
+	
+	.span__herramientas {
+		font-size: calc(16px + 1vw);
+		color: black;
+		font-weight: bold;
+		text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+	}
+	
+	.cuadrado{
+		background-color:rgba(4, 4, 4, 0.505);
+		border-style: dashed;
+		border-radius: 5px;
+	}
+	
+	.btn-acercademi {
+		background-color: rgba(0, 0, 0, 0.565);
+		border-style: dashed;
+	}
+	
+	/* Cards */
+	.seccion_card {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		margin: 5px;
+	}
+	
+	.card {
+		position: relative;
+		width: 250px;
+		height: 200px;
+		margin: 10px;
+	}
+	
+	.card .face {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		border-radius: 10px;
+		overflow: hidden;
+		transition: 1s;
+	}
+	
+	.card .front {
+		transform: perspective(600px) rotateY(0deg);
+		box-shadow: 0 5px 10px #000;
+	}
+	
+	.card .front img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	
+	.card .front h3 {
+		position: absolute;
+		font-size: 15px;
+		bottom: 0;
+		width: 100%;
+		height: 65px;
+		line-height: 55px;
+		color: #fff;
+		background: rgba(0,0,0,.4);
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		
+	}
+	
+	.card .back {
+		transform: perspective(600px) rotateY(180deg);
+		background-color: rgb(143, 228, 236);
+		padding: 15px;
+		color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		box-shadow: 0 5px 10px #000;
+	}
+	
+	.card .back .link {
+		border-top: solid 1px #f3f3f3;
+		height: 50px;
+		line-height: 50px;
+	}
+	
+	.card .back .link a {
+		color: #f3f3f3;
+	}
+	
+	.card .back h3 {
+		font-size: 35px;
+		margin-top: 5px;
+		letter-spacing: 2px;
+		font-weight:bold ;
+		font-family: "Montserrat", sans-serif;
+	}
+	
+	.card .back p {
+		letter-spacing: 1px;
+	} 
+	
+	.card:hover .front {
+		transform: perspective(600px) rotateY(180deg);
+	}
+	
+	.card:hover .back {
+		transform: perspective(600px) rotateY(360deg);
+	}
+	
+	.bg-dark{
+		background-color:transparent!important;
+		}
+	
+	/* GOTOP */
+	.go-top-container {
+		position: fixed;
+		bottom: 2rem;
+		right: 3rem;
+		width: 3rem;
+		height: 2rem;
+		z-index: -1;
+	}
+	  
+	.go-top-button {
+		width: 5px;
+		height: 5px;
+		border-radius: 200%;
+		cursor: pointer;
+		transition: 0.2s;
+		position: absolute;
+		top: 40%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		display: block;
+		background-color: rgba(47, 42, 42, 0.67);
+	}
+	  
+	.go-top-button i {
+		position: absolute;
+		font-size: 1.7rem;
+		top: 48%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		color:red;
+		transition: 0.2s;
+	}
+	  
+	.show {
+		z-index: 10;
+	}
+	  
+	.show .go-top-button {
+		animation: popup 0.3s ease-in-out;
+		width: 5.6rem;
+		height: 5.6rem;
+		z-index: 11;
+	}
+	  
+	.show i {
+		transform: translate(-50%, -50%) scale(1);
+	}
 	}
 
 /* col-md */
@@ -484,7 +775,194 @@ h1{
 	}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-}
+
+
+	.marca {
+		font-size: 2rem!important;
+	}
+	
+	.ml3 {
+		font-size: 2.5em;
+	}
+	
+	.banner-image {
+		background-size:cover;
+		background-position: center center;
+	}
+	
+	.logo {
+			width: 3rem;
+			height: 4rem;
+	}
+	
+	.span__herramientas {
+		font-size: calc(16px + 1vw);
+		color: black;
+		font-weight: bold;
+		text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+	}
+	
+	.cuadrado{
+		background-color:rgba(4, 4, 4, 0.505);
+		border-style: dashed;
+		border-radius: 5px;
+	}
+	
+	.btn-acercademi {
+		background-color: rgba(0, 0, 0, 0.565);
+		border-style: dashed;
+	}
+	
+	/* Cards */
+	.seccion_card {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		margin: 5px;
+	}
+	
+	.card {
+		position: relative;
+		width: 250px;
+		height: 200px;
+		margin: 10px;
+	}
+	
+	.card .face {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		border-radius: 10px;
+		overflow: hidden;
+		transition: 1s;
+	}
+	
+	.card .front {
+		transform: perspective(600px) rotateY(0deg);
+		box-shadow: 0 5px 10px #000;
+	}
+	
+	.card .front img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	
+	.card .front h3 {
+		position: absolute;
+		font-size: 15px;
+		bottom: 0;
+		width: 100%;
+		height: 65px;
+		line-height: 55px;
+		color: #fff;
+		background: rgba(0,0,0,.4);
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		
+	}
+	
+	.card .back {
+		transform: perspective(600px) rotateY(180deg);
+		background-color: rgb(143, 228, 236);
+		padding: 15px;
+		color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		box-shadow: 0 5px 10px #000;
+	}
+	
+	.card .back .link {
+		border-top: solid 1px #f3f3f3;
+		height: 50px;
+		line-height: 50px;
+	}
+	
+	.card .back .link a {
+		color: #f3f3f3;
+	}
+	
+	.card .back h3 {
+		font-size: 35px;
+		margin-top: 5px;
+		letter-spacing: 2px;
+		font-weight:bold ;
+		font-family: "Montserrat", sans-serif;
+	}
+	
+	.card .back p {
+		letter-spacing: 1px;
+	} 
+	
+	.card:hover .front {
+		transform: perspective(600px) rotateY(180deg);
+	}
+	
+	.card:hover .back {
+		transform: perspective(600px) rotateY(360deg);
+	}
+	
+	.bg-dark{
+		background-color:transparent!important;
+		}
+	
+	/* GOTOP */
+	.go-top-container {
+		position: fixed;
+		bottom: 2rem;
+		right: 3rem;
+		width: 3rem;
+		height: 2rem;
+		z-index: -1;
+	}
+	  
+	.go-top-button {
+		width: 5px;
+		height: 5px;
+		border-radius: 200%;
+		cursor: pointer;
+		transition: 0.2s;
+		position: absolute;
+		top: 40%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		display: block;
+		background-color: rgba(47, 42, 42, 0.67);
+	}
+	  
+	.go-top-button i {
+		position: absolute;
+		font-size: 1.7rem;
+		top: 48%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		color:red;
+		transition: 0.2s;
+	}
+	  
+	.show {
+		z-index: 10;
+	}
+	  
+	.show .go-top-button {
+		animation: popup 0.3s ease-in-out;
+		width: 5.6rem;
+		height: 5.6rem;
+		z-index: 11;
+	}
+	  
+	.show i {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	}
 
 /* col-lg */
 @media (min-width: 1200px) {    
