@@ -63,6 +63,7 @@ p h1 h2 h3 h4 h5 h6{
 .navbar-nav li a{ 
 	font-size: 25px!important;
 	font-family: "Montserrat", sans-serif;
+	display: inline;
 }
 
 .navbar-nav li a:hover{
@@ -73,9 +74,13 @@ p h1 h2 h3 h4 h5 h6{
 	border-radius: 3px;
 }
 
+.navbar-collapse ul li a{ /* no funciona */
+	display: inline
+}
+
 .logo {
 	width: 4rem;
-	height: 3.5rem;
+	height: 4.5rem;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––– */
@@ -143,9 +148,6 @@ p h1 h2 h3 h4 h5 h6{
 	50%{
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.1.jpg');
 	}
-	51%{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.3.jpg');
-	}
 	75%{
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/3.3.jpg');
 	}
@@ -200,7 +202,7 @@ h1{
 
 /*=============== Cards ================*/
 .seccion_card {
-	padding: 2rem 0rem 2rem 0rem;
+	padding: 2rem 0rem 2rem 0rem; 
 	justify-content: center;
 	align-items: center;
 }
@@ -339,7 +341,7 @@ h1{
 	transition: 0.2s;
 	position: absolute;
 	top: 40%;
-	left: 55%;
+	left: 85%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
@@ -390,11 +392,17 @@ h1{
 /*=======================================================================================================
 =                                        Medias queries                                                  =
 ========================================================================================================*/
-/* col-xs */
+/* col-xs */ /* telefonos */
 @media (max-width: 420px) {
 
+	.navbar-nav ul li { 
+		font-size: 23px!important;
+		font-family: "Montserrat", sans-serif;
+		display: inline;
+	}
+
 .marca {
-	font-size: 2rem!important;
+	font-size: 1.5rem!important;
 }
 
 .ml3 {
@@ -506,8 +514,8 @@ h1{
 }
 
 .card .back h3 {
-    font-size: 35px;
-    margin-top: 5px;
+    font-size: 18px;
+    margin-top: 3px;
     letter-spacing: 2px;
 	font-weight:bold ;
 	font-family: "Montserrat", sans-serif;
@@ -515,6 +523,7 @@ h1{
 
 .card .back p {
     letter-spacing: 1px;
+	font-size: 10px!important;
 } 
 
 .card:hover .front {
@@ -547,7 +556,7 @@ h1{
 	transition: 0.2s;
 	position: absolute;
 	top: 40%;
-	left: 55%;
+	left: 35%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
@@ -580,7 +589,7 @@ h1{
 }
 }
 
-/* col-sm */
+/* col-sm */ /* telefonos landscape */
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.marca {
@@ -770,7 +779,7 @@ h1{
 	}
 	}
 
-/* col-md */
+/* col-md */ /* Ipads */
 @media (min-width: 992px) {
 
 	}
@@ -965,7 +974,7 @@ h1{
 	}
 	}
 
-/* col-lg */
+/* col-lg */ /* notebooks */
 @media (min-width: 1200px) {    
 }
 
