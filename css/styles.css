@@ -15,7 +15,7 @@
 	margin: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
-	font-family: "Montserrat", sans-serif;
+	/* font-family: "Montserrat", sans-serif; */
 }
 
 .main {
@@ -54,15 +54,15 @@ p h1 h2 h3 h4 h5 h6{
 }
 
 .marca {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Courier New', Courier, monospace;  
     font-size: 2.5rem!important;
 	font-weight: bold;
-	text-shadow: 0 0 15px whitesmoke, 0 0 15px #060606;
+	text-shadow: 0 0 15px  rgb(143, 228, 236), 0 0 15px #060606;
 }
 
 .navbar-nav li a{ 
 	font-size: 25px!important;
-	font-family: "Montserrat", sans-serif;
+	/* font-family: "Montserrat", sans-serif; */
 	display: inline;
 }
 
@@ -74,13 +74,9 @@ p h1 h2 h3 h4 h5 h6{
 	border-radius: 3px;
 }
 
-.navbar-collapse ul li a{ /* no funciona */
-	display: inline
-}
-
 .logo {
 	width: 4rem;
-	height: 4.5rem;
+	height: rem;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––– */
@@ -89,7 +85,7 @@ p h1 h2 h3 h4 h5 h6{
 .rotate {
 	-webkit-animation: rotate 5s normal linear infinite;
 	animation: rotate 5s normal linear infinite;
-  }
+}
   
   @keyframes rotate {
 	0% {
@@ -173,7 +169,7 @@ h1{
 	font-size: 3.5em;
 }
 
-/* H3 Span Herramientas*/
+/* H3 Span Herramientas */
 .span__herramientas {
 	font-size: calc(16px + 1vw);
 	color: black;
@@ -203,15 +199,18 @@ h1{
 /*=============== Cards ================*/
 .seccion_card {
 	padding: 2rem 0rem 2rem 0rem; 
-	justify-content: center;
-	align-items: center;
+	display: flex;
+    justify-content: center;
+	overflow-y: hidden;
 }
 
 .card {
-    position: relative;
+    /* centrar vertical y horizontalmente */
+	position: relative;
     width: 500px;
-    height: 450px;
+    height: 350px;
     margin: 20px;
+	left: 10%;
 }
 
 .card .face {
@@ -233,13 +232,13 @@ h1{
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-	object-position: center;
+    object-fit: fill;
+	object-position: cover;
 }
 
 .card .front h3 {
     position: absolute;
-    bottom: 0;
+    top: 83%;
     width: 100%;
     height: 65px;
     line-height: 55px;
@@ -247,6 +246,7 @@ h1{
     background: rgba(0,0,0,.4);
     text-align: center;
 	font-family: "Montserrat", sans-serif;
+
 }
 
 .card .back {
@@ -296,30 +296,32 @@ h1{
 /*-------------- FOOTER-------------*/
 /*----------------------------------*/
 .footer {
-	padding: 4rem 0 1rem 0!important;
+	padding: 1rem 0 0 0!important;
+	margin: 0;
 }
-	
+
 .footer__quickLinks {
-		list-style: none;
+	list-style: none;
 }
-	  
+  
 .footer__quickLinks__a {
-		text-decoration: none;
-		color: white;
-		font-size: 20px;
-		font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: "Montserrat", sans-serif;
 }
-	
+
 .footer__quickLinks__a:hover {
-		color: red;
-		-webkit-transition: 1s;
-		transition: 1s;
+	color: red;
+	-webkit-transition: 1s;
+	transition: 1s;
 }
-	  
+  
 .footer__quickLinks__redes {
-		font-size: 2rem;
-		color: white;
+	font-size: 2rem;
+	color: white;
 }
+
 
 /*=========== BOTON ARRIBA ============*/
 
@@ -392,14 +394,18 @@ h1{
 /*=======================================================================================================
 =                                        Medias queries                                                  =
 ========================================================================================================*/
-/* col-xs */ /* telefonos */
+/* col-xs */ /* teléfonos */
 @media (max-width: 420px) {
 
-	.navbar-nav ul li { 
-		font-size: 23px!important;
-		font-family: "Montserrat", sans-serif;
-		display: inline;
-	}
+.navbar-nav ul li { 
+	font-size: 23px!important;
+	font-family: "Montserrat", sans-serif;
+	display: inline;
+}
+
+.navbar-collapse ul li a{ /* no funciona */
+	display: inline
+}	
 
 .marca {
 	font-size: 1.5rem!important;
