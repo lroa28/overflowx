@@ -121,7 +121,9 @@ p h1 h2 h3 h4 h5 h6{
 	height: 100vh;
 	transition: all .1s ease-out;
 	animation: banner-image 28s infinite linear;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+	-webkit-clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
+	clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
 }
 
 /*.bg-dark { no esta funcionando en ningun bg esta prop 
@@ -392,9 +394,10 @@ h1{
 /*=======================================================================================================
 =                                        Medias queries                                                  =
 ========================================================================================================*/
-/* col-xs */ /* teléfonos */
+/* col-xs */ /* teléfonos - Extra small*/
 @media (max-width: 420px) {
 
+/* NavBar */
 .navbar-nav ul li { 
 	font-size: 23px!important;
 	font-family: "Montserrat", sans-serif;
@@ -594,24 +597,114 @@ h1{
 }
 
 /* col-sm */ /* telefonos landscape */
-@media (min-width: 768px) and (max-width: 991px) {
-
+@media (min-width: 768px) {
+/* NavBar */
 .navbar-nav ul li { 
 	font-size: 23px!important;
 	font-family: "Montserrat", sans-serif;
 	display: inline;
 }
 
-.navbar-collapse ul li a{ /* no funciona */
-	display: inline
-}	
-
 .marca {
-	font-size: 1.5rem!important;
+	font-size: 2rem!important;
 }
 
 .ml3 {
-	font-size: 2.5em;
+	font-size: 2rem;
+}
+
+.banner-image {
+	background-size:cover;
+    background-position: center center;
+}
+
+.logo {
+		width: 4rem;
+		height: 5rem;
+}
+
+.span__herramientas {
+	font-size: calc(12px + 0.5vw);
+	color: black;
+	font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+}
+
+.cuadrado{
+	background-color:rgba(4, 4, 4, 0.505);
+	border-style: dashed;
+	border-radius: 5px;
+	width: fit-content;
+}
+
+.btn-acercademi {
+	font-size: large;
+}
+
+/* Cards */
+.seccion_card {
+    height: 70vh;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+	left: 5%;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+	object-position: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 65px;
+    line-height: 55px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.624);
+    text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+}
+
+.card .back h3 {
+    font-size: 18px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+	font-weight:bold ;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+	font-size: 12px!important;
+} 
+
+}
+
+/* col-md */ /* Ipads */
+@media (min-width: 992px) {
+
+/* NavBar */
+.navbar-nav ul li { 
+	font-size: 23px!important;
+	font-family: "Montserrat", sans-serif;
+	display: inline;
+}
+
+.marca {
+	font-size: 2rem!important;
+}
+
+.ml3 {
+	font-size: 2rem;
 }
 
 .banner-image {
@@ -625,54 +718,19 @@ h1{
 }
 
 .span__herramientas {
-	font-size: calc(16px + 1vw);
+	font-size: calc(12px + 1vw);
 	color: black;
 	font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
 }
 
-.cuadrado{
-	background-color:rgba(4, 4, 4, 0.505);
-	border-style: dashed;
-	border-radius: 5px;
-}
-
-.btn-acercademi {
-	background-color: rgba(0, 0, 0, 0.565);
-	border-style: dashed;
-}
-
 /* Cards */
-.seccion_card {
-	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	justify-items: center;
-	margin: 5px;
-}
-
 .card {
     position: relative;
-    width: 280px;
-    height: 200px;
+    width: 480px;
+    height: 300px;
     margin: 10px;
-	left: 1%;
-}
-
-.card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 1s;
-}
-
-.card .front {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
+	left: 10%;
 }
 
 .card .front img {
@@ -685,7 +743,7 @@ h1{
 
 .card .front h3 {
     position: absolute;
-    top: 70%;
+    top: 80%;
     width: 100%;
     height: 65px;
     line-height: 55px;
@@ -708,16 +766,6 @@ h1{
     box-shadow: 0 5px 10px #000;
 }
 
-.card .back .link {
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
-}
-
-.card .back .link a {
-    color: #f3f3f3;
-}
-
 .card .back h3 {
     font-size: 18px;
     margin-top: 3px;
@@ -731,277 +779,15 @@ h1{
 	font-size: 12px!important;
 } 
 
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-}
-
-.bg-dark{
-	background-color:transparent!important;
-	}
-
-/* GOTOP */
-.go-top-container {
-	position: fixed;
-	bottom: 2rem;
-	right: 3rem;
-	width: 3rem;
-	height: 2rem;
-	z-index: -1;
-}
-  
-.go-top-button {
-	width: 5px;
-	height: 5px;
-	border-radius: 200%;
-	cursor: pointer;
-	transition: 0.2s;
-	position: absolute;
-	top: 40%;
-	left: 35%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-	display: block;
-	background-color: rgba(47, 42, 42, 0.67);
-}
-  
-.go-top-button i {
-	position: absolute;
-	font-size: 1.7rem;
-	top: 48%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	color:red;
-	transition: 0.2s;
-}
-  
-.show {
-	z-index: 10;
-}
-  
-.show .go-top-button {
-	animation: popup 0.3s ease-in-out;
-	width: 5.6rem;
-	height: 5.6rem;
-	z-index: 11;
-}
-  
-.show i {
-	transform: translate(-50%, -50%) scale(1);
-}
-}
-
-/* col-md */ /* Ipads */
-@media (min-width: 992px) {
-	.navbar-nav ul li { 
-		font-size: 23px!important;
-		font-family: "Montserrat", sans-serif;
-		display: inline;
-	}
-	
-	.navbar-collapse ul li a{ /* no funciona */
-		display: inline
-	}	
-	
-	.marca {
-		font-size: 1.5rem!important;
-	}
-	
-	.ml3 {
-		font-size: 2.5em;
-	}
-	
-	.banner-image {
-		background-size:cover;
-		background-position: center center;
-	}
-	
-	.logo {
-			width: 3rem;
-			height: 4rem;
-	}
-	
-	.span__herramientas {
-		font-size: calc(16px + 1vw);
-		color: black;
-		font-weight: bold;
-		text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
-	}
-	
-	.cuadrado{
-		background-color:rgba(4, 4, 4, 0.505);
-		border-style: dashed;
-		border-radius: 5px;
-	}
-	
-	.btn-acercademi {
-		background-color: rgba(0, 0, 0, 0.565);
-		border-style: dashed;
-	}
-	
-	/* Cards */
-	.seccion_card {
-		display: flex;
-		align-items: center;
-		align-content: center;
-		justify-content: center;
-		justify-items: center;
-		margin: 5px;
-	}
-	
-	.card {
-		position: relative;
-		width: 280px;
-		height: 200px;
-		margin: 10px;
-		left: 1%;
-	}
-	
-	.card .face {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		backface-visibility: hidden;
-		border-radius: 10px;
-		overflow: hidden;
-		transition: 1s;
-	}
-	
-	.card .front {
-		transform: perspective(600px) rotateY(0deg);
-		box-shadow: 0 5px 10px #000;
-	}
-	
-	.card .front img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		object-fit: fill;
-		object-position: cover;
-	}
-	
-	.card .front h3 {
-		position: absolute;
-		top: 70%;
-		width: 100%;
-		height: 65px;
-		line-height: 55px;
-		color: #fff;
-		background: rgba(0, 0, 0, 0.624);
-		text-align: center;
-		font-family: "Montserrat", sans-serif;
-		font-size: 18px;
-	}
-	
-	.card .back {
-		transform: perspective(600px) rotateY(180deg);
-		background-color: rgb(143, 228, 236);
-		padding: 15px;
-		color: black;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		box-shadow: 0 5px 10px #000;
-	}
-	
-	.card .back .link {
-		border-top: solid 1px #f3f3f3;
-		height: 50px;
-		line-height: 50px;
-	}
-	
-	.card .back .link a {
-		color: #f3f3f3;
-	}
-	
-	.card .back h3 {
-		font-size: 18px;
-		margin-top: 3px;
-		letter-spacing: 2px;
-		font-weight:bold ;
-		font-family: "Montserrat", sans-serif;
-	}
-	
-	.card .back p {
-		letter-spacing: 1px;
-		font-size: 12px!important;
-	} 
-	
-	.card:hover .front {
-		transform: perspective(600px) rotateY(180deg);
-	}
-	
-	.card:hover .back {
-		transform: perspective(600px) rotateY(360deg);
-	}
-	
-	.bg-dark{
-		background-color:transparent!important;
-		}
-	
-	/* GOTOP */
-	.go-top-container {
-		position: fixed;
-		bottom: 2rem;
-		right: 3rem;
-		width: 3rem;
-		height: 2rem;
-		z-index: -1;
-	}
-	  
-	.go-top-button {
-		width: 5px;
-		height: 5px;
-		border-radius: 200%;
-		cursor: pointer;
-		transition: 0.2s;
-		position: absolute;
-		top: 40%;
-		left: 35%;
-		transform: translate(-50%, -50%);
-		z-index: -1;
-		display: block;
-		background-color: rgba(47, 42, 42, 0.67);
-	}
-	  
-	.go-top-button i {
-		position: absolute;
-		font-size: 1.7rem;
-		top: 48%;
-		left: 50%;
-		transform: translate(-50%, -50%) scale(0);
-		color:red;
-		transition: 0.2s;
-	}
-	  
-	.show {
-		z-index: 10;
-	}
-	  
-	.show .go-top-button {
-		animation: popup 0.3s ease-in-out;
-		width: 5.6rem;
-		height: 5.6rem;
-		z-index: 11;
-	}
-	  
-	.show i {
-		transform: translate(-50%, -50%) scale(1);
-	}
-	}
-
-
+/* col-lg */ /* notebooks - Large*/
 @media (min-width: 992px) and (max-width: 1199px) {
+
 }
 
-/* col-lg */ /* notebooks */
+/* col-lg */ /* notebooks - Extra large*/
 @media (min-width: 1200px) {    
+
 }
 
-/*col-sm col-md col-lg*/
-@media (min-width: 768px) {
-}
