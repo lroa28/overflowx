@@ -459,7 +459,7 @@ h1{
     width: 280px;
     height: 200px;
     margin: 10px;
-	left: 1%;
+	left: 0.5%;
 }
 
 .card .face {
@@ -594,11 +594,16 @@ h1{
 .show i {
 	transform: translate(-50%, -50%) scale(1);
 }
+
 }
 
 /* col-sm */ /* telefonos landscape */
 @media (min-width: 768px) {
-/* NavBar */
+.main {
+	height: 65vh!important;
+}
+
+	/* NavBar */
 .navbar-nav ul li { 
 	font-size: 23px!important;
 	font-family: "Montserrat", sans-serif;
