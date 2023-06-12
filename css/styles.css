@@ -76,7 +76,7 @@ p h1 h2 h3 h4 h5 h6{
 
 .logo {
 	width: 4rem;
-	height: rem;
+	height: 3.5rem;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––– */
@@ -415,6 +415,11 @@ Extra extra large	xxl	≥1400px */
 	display: inline;
 }
 
+.logo {
+	width: 2rem;
+	height: 2.5rem;
+}
+
 .marca {
 	font-size: 1rem!important;
 }
@@ -428,11 +433,6 @@ h1{
 .banner-image {
 	background-size:cover;
     background-position: center center;
-}
-
-.logo {
-		width: 3rem;
-		height: 2.5rem;
 }
 
 .span__herramientas {
@@ -586,8 +586,19 @@ h1{
 	display: inline;
 }
 
+.navbar-toggler {
+    height: 7px;
+    width:  5px;
+    top: -5%
+}
+
 .marca {
 	font-size: 1.8rem!important;
+}
+
+.logo {
+	width: 2.5rem;
+	height: 2.5rem;
 }
 
 /* ----- Banner -----*/
@@ -603,11 +614,6 @@ h1{
 .banner-image {
 	background-size:cover;
     background-position: center center;
-}
-
-.logo {
-		width: 3rem;
-		height: 3rem;
 }
 
 .span__herramientas {
@@ -644,7 +650,7 @@ h1{
     width: 230px;
     height: 200px;
     margin: 10px;
-	left: 10%;
+	left: -3%;
 }
 
 .card .face {
