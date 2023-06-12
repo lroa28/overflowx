@@ -13,7 +13,7 @@
 	position: relative;
 	padding: 0;
 	margin: 0;
-	overflow-y: auto;
+	/* overflow-y: auto; */
 	overflow-x: hidden;
 	/* font-family: "Montserrat", sans-serif; */
 }
@@ -21,14 +21,14 @@
 .main {
 	width: 100vw;
 	height: 100vh;
-	overflow-y: auto;
+	/* overflow-y: hidden; */
 	overflow-x: hidden;
 }
 
 .body {
 	width: 100vw;
 	height: 100vh;
-	overflow-y: auto;
+	/* overflow-y: hidden; */
 	overflow-x: hidden;
 }
 
@@ -408,6 +408,7 @@ Extra extra large	xxl	≥1400px */
 
 /* http://www.mywonderland.es/curso_js/HTML/mediaqueries.html =* no lo interpreto el css*/
 
+/* Available breakpoints extra small */
 @media (min-width: 1px) and (max-width: 320px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
@@ -462,6 +463,7 @@ h1{
 	justify-content: center;
 	justify-items: center;
 	margin: 2.5px;
+	width: 100vw;
 }
 
 .card {
@@ -579,6 +581,7 @@ h1{
 }
 }
 
+/* Available breakpoints sm - small */
 @media screen and (min-width: 321px) and (max-width: 768px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
@@ -647,10 +650,10 @@ h1{
 
 .card {
     position: relative;
-    width: 230px;
-    height: 200px;
+    width: 330px;
+    height: 250px;
     margin: 10px;
-	left: -3%;
+	left: -8%;
 }
 
 .card .face {
@@ -678,7 +681,7 @@ h1{
 
 .card .front h3 {
     position: absolute;
-    top: 70%;
+    top: 75%;
     width: 100%;
     height: 65px;
     line-height: 55px;
@@ -787,6 +790,7 @@ h1{
 }	
 }
 
+/* Available breakpoints medium, large, extra large and extra extra large */
 @media (min-width: 768px) and (max-width: 1199.98px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
@@ -811,6 +815,7 @@ h1{
 .banner-image {
 	background-size:cover;
     background-position: center center;
+	height: 60vh!important;
 }
 
 .logo {
@@ -853,7 +858,7 @@ h1{
     width: 400px;
     height: 250px;
     margin: 10px;
-	left: 0%;
+	left: -5%;
 }
 
 .card .face {
@@ -881,7 +886,7 @@ h1{
 
 .card .front h3 {
     position: absolute;
-    top: 70%;
+    top: 80%;
     width: 100%;
     height: 65px;
     line-height: 55px;
