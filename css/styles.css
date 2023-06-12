@@ -203,6 +203,7 @@ h1{
 	padding: 2rem 0rem 2rem 0rem; 
 	display: flex;
     justify-content: center;
+	width: fit-content;
 }
 
 .card {
@@ -304,7 +305,7 @@ h1{
 .footer__quickLinks {
 	list-style: none;
 }
-  
+
 .footer__quickLinks__a {
 	text-decoration: none;
 	color: white;
@@ -317,7 +318,7 @@ h1{
 	-webkit-transition: 1s;
 	transition: 1s;
 }
-  
+
 .footer__quickLinks__redes {
 	font-size: 2rem;
 	color: white;
@@ -334,7 +335,7 @@ h1{
 	height: 2rem;
 	z-index: -1;
 }
-  
+
 .go-top-button {
 	width: 5px;
 	height: 5px;
@@ -349,7 +350,7 @@ h1{
 	display: block;
 	background-color: black;
 }
-  
+
 .go-top-button i {
 	position: absolute;
 	font-size: 2.5rem;
@@ -359,18 +360,18 @@ h1{
 	color: red;
 	transition: 0.2s;
 }
-  
+
 .show {
 	z-index: 10;
 }
-  
+
 .show .go-top-button {
 	animation: popup 0.3s ease-in-out;
 	width: 5.6rem;
 	height: 5.6rem;
 	z-index: 11;
 }
-  
+
 .show i {
 	transform: translate(-50%, -50%) scale(1);
 }
@@ -394,26 +395,34 @@ h1{
 /*=======================================================================================================
 =                                        Medias queries                                                  =
 ========================================================================================================*/
-/* col-xs */ /* teléfonos - Extra small*/
-@media (max-width: 420px) {
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries */
+/* Breakpoint	Class infix	Dimensions
+Extra small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
 
-/* NavBar */
-.navbar-nav ul li { 
-	font-size: 23px!important;
-	font-family: "Montserrat", sans-serif;
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp =*/ /* no funciona el only/and */	
+
+/* http://www.mywonderland.es/curso_js/HTML/mediaqueries.html =* no lo interpreto el css*/
+
+@media (min-width: 1px) and (max-width: 320px) {
+/* ----- NavBar -----*/
+.navbar-nav li a{ 
+	font-size: 15px!important;
 	display: inline;
 }
 
-.navbar-collapse ul li a{ /* no funciona */
-	display: inline
-}	
-
 .marca {
-	font-size: 1.5rem!important;
+	font-size: 1.3rem!important;
 }
 
-.ml3 {
-	font-size: 2.5em;
+/* ----- Banner -----*/
+h1{
+	font-size: 20px!important;
+	font-style: italic;
 }
 
 .banner-image {
@@ -423,7 +432,183 @@ h1{
 
 .logo {
 		width: 3rem;
-		height: 4rem;
+		height: 2.5rem;
+}
+
+.span__herramientas {
+	font-size: calc(12px + 1vw);
+	color: black;
+	font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+}
+
+.cuadrado{
+	background-color:rgba(4, 4, 4, 0.505);
+	border-style: dashed;
+	border-radius: 5px;
+}
+
+.btn-acercademi {
+	background-color: rgba(0, 0, 0, 0.565);
+	border-style: dashed;
+	font-size: 0.8em;
+}
+
+/* ----- Cards -----*/
+.seccion_card {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	margin: 2.5px;
+}
+
+.card {
+    position: relative;
+    width: 230px;
+    height: 200px;
+    margin: 10px;
+	left: -5%;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+	object-position: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 65px;
+    line-height: 55px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.624);
+    text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(143, 228, 236);
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 18px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+	font-weight:bold ;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+	font-size: 12px!important;
+} 
+
+/* ----- Boton Arriba -----*/
+.go-top-container {
+	position: fixed;
+	bottom: 2rem;
+	right: 3rem;
+	width: 2.5rem;
+	height: 1rem;
+	z-index: -1;
+}
+
+.go-top-button {
+	width: 4.5px;
+	height: 4px;
+	border-radius: 200%;
+	cursor: pointer;
+	transition: 0.2s;
+	position: absolute;
+	top: 40%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	display: block;
+	background-color: black;
+}
+
+.go-top-button i {
+	position: absolute;
+	font-size: 2rem;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: red;
+	transition: 0.2s;
+}
+
+.show {
+	z-index: 10;
+}
+
+.show .go-top-button {
+	animation: popup 0.3s ease-in-out;
+	width: 5.6rem;
+	height: 5.6rem;
+	z-index: 11;
+}
+
+.show i {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+/* ----- NavBar -----*/
+.navbar-nav li a{ 
+	font-size: 19px!important;
+	display: inline;
+}
+
+.marca {
+	font-size: 1.8rem!important;
+}
+
+/* ----- Banner -----*/
+h1{
+	font-size: 30px!important;
+	font-style: italic;
+}
+
+.ml3 {
+	font-size: 1.5em;
+}
+
+.banner-image {
+	background-size:cover;
+    background-position: center center;
+}
+
+.logo {
+		width: 3rem;
+		height: 3rem;
 }
 
 .span__herramientas {
@@ -442,9 +627,10 @@ h1{
 .btn-acercademi {
 	background-color: rgba(0, 0, 0, 0.565);
 	border-style: dashed;
+	font-size: 1em;
 }
 
-/* Cards */
+/* ----- Cards -----*/
 .seccion_card {
 	display: flex;
 	align-items: center;
@@ -456,10 +642,10 @@ h1{
 
 .card {
     position: relative;
-    width: 280px;
+    width: 230px;
     height: 200px;
     margin: 10px;
-	left: 0.5%;
+	left: 10%;
 }
 
 .card .face {
@@ -543,79 +729,28 @@ h1{
 
 .bg-dark{
 	background-color:transparent!important;
-	}
-
-/* GOTOP */
-.go-top-container {
-	position: fixed;
-	bottom: 2rem;
-	right: 3rem;
-	width: 3rem;
-	height: 2rem;
-	z-index: -1;
-}
-  
-.go-top-button {
-	width: 5px;
-	height: 5px;
-	border-radius: 200%;
-	cursor: pointer;
-	transition: 0.2s;
-	position: absolute;
-	top: 40%;
-	left: 35%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-	display: block;
-	background-color: rgba(47, 42, 42, 0.67);
-}
-  
-.go-top-button i {
-	position: absolute;
-	font-size: 1.7rem;
-	top: 48%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	color:red;
-	transition: 0.2s;
-}
-  
-.show {
-	z-index: 10;
-}
-  
-.show .go-top-button {
-	animation: popup 0.3s ease-in-out;
-	width: 5.6rem;
-	height: 5.6rem;
-	z-index: 11;
-}
-  
-.show i {
-	transform: translate(-50%, -50%) scale(1);
+	}	
 }
 
-}
-
-/* col-sm */ /* telefonos landscape */
-@media (min-width: 768px) {
-.main {
-	height: 65vh!important;
-}
-
-	/* NavBar */
-.navbar-nav ul li { 
-	font-size: 23px!important;
-	font-family: "Montserrat", sans-serif;
+@media (min-width: 768px) and (max-width: 1199.98px) {
+/* ----- NavBar -----*/
+.navbar-nav li a{ 
+	font-size: 25px!important;
 	display: inline;
 }
 
 .marca {
-	font-size: 2rem!important;
+	font-size: 2.5rem!important;
+}
+
+/* ----- Banner -----*/
+h1{
+	font-size: 35px!important;
+	font-style: italic;
 }
 
 .ml3 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 .banner-image {
@@ -624,12 +759,12 @@ h1{
 }
 
 .logo {
-		width: 4rem;
-		height: 5rem;
+		width: 3.5rem;
+		height: 4rem;
 }
 
 .span__herramientas {
-	font-size: calc(12px + 0.5vw);
+	font-size: calc(16px + 1vw);
 	color: black;
 	font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
@@ -643,19 +778,42 @@ h1{
 }
 
 .btn-acercademi {
-	font-size: large;
+	background-color: rgba(0, 0, 0, 0.565);
+	border-style: dashed;
+	font-size: 1.5rem;
 }
 
-/* Cards */
+/* ----- Cards -----*/
 .seccion_card {
-    height: 70vh;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	margin: 5px;
 }
+
 .card {
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 250px;
     margin: 10px;
-	left: 5%;
+	left: 0%;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
 }
 
 .card .front img {
@@ -668,87 +826,7 @@ h1{
 
 .card .front h3 {
     position: absolute;
-    top: 75%;
-    width: 100%;
-    height: 65px;
-    line-height: 55px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.624);
-    text-align: center;
-	font-family: "Montserrat", sans-serif;
-	font-size: 18px;
-}
-
-.card .back h3 {
-    font-size: 18px;
-    margin-top: 3px;
-    letter-spacing: 2px;
-	font-weight:bold ;
-	font-family: "Montserrat", sans-serif;
-}
-
-.card .back p {
-    letter-spacing: 1px;
-	font-size: 12px!important;
-} 
-
-}
-
-/* col-md */ /* Ipads */
-@media (min-width: 992px) {
-
-/* NavBar */
-.navbar-nav ul li { 
-	font-size: 23px!important;
-	font-family: "Montserrat", sans-serif;
-	display: inline;
-}
-
-.marca {
-	font-size: 2rem!important;
-}
-
-.ml3 {
-	font-size: 2rem;
-}
-
-.banner-image {
-	background-size:cover;
-    background-position: center center;
-}
-
-.logo {
-		width: 3rem;
-		height: 4rem;
-}
-
-.span__herramientas {
-	font-size: calc(12px + 1vw);
-	color: black;
-	font-weight: bold;
-    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
-}
-
-/* Cards */
-.card {
-    position: relative;
-    width: 480px;
-    height: 300px;
-    margin: 10px;
-	left: 10%;
-}
-
-.card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-	object-position: cover;
-}
-
-.card .front h3 {
-    position: absolute;
-    top: 80%;
+    top: 70%;
     width: 100%;
     height: 65px;
     line-height: 55px;
@@ -771,6 +849,16 @@ h1{
     box-shadow: 0 5px 10px #000;
 }
 
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
 .card .back h3 {
     font-size: 18px;
     margin-top: 3px;
@@ -784,15 +872,20 @@ h1{
 	font-size: 12px!important;
 } 
 
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
 }
 
-/* col-lg */ /* notebooks - Large*/
-@media (min-width: 992px) and (max-width: 1199px) {
-
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
 
-/* col-lg */ /* notebooks - Extra large*/
-@media (min-width: 1200px) {    
-
+/* ----- Cards -----*/
+.main {
+	width: 100vw;
+	height: fit-content;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
 }
 

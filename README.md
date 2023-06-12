@@ -196,7 +196,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 * E-mail - overflow.x.lcr@gmail.com
 
-* [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514)
+* Linkedin - [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
