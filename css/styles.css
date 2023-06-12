@@ -348,7 +348,7 @@ h1{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.52);
 }
 
 .go-top-button i {
@@ -550,7 +550,7 @@ h1{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.27);
 }
 
 .go-top-button i {
@@ -735,6 +735,56 @@ h1{
 .bg-dark{
 	background-color:transparent!important;
 	}	
+
+/* ----- Boton Arriba -----*/
+.go-top-container {
+	position: fixed;
+	bottom: 2rem;
+	right: 3rem;
+	width: 1rem;
+	height: 1rem;
+	z-index: -1;
+}
+
+.go-top-button {
+	width: 4px;
+	height: 4px;
+	border-radius: 200%;
+	cursor: pointer;
+	transition: 0.2s;
+	position: absolute;
+	top: 40%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.468);
+}
+
+.go-top-button i {
+	position: absolute;
+	font-size: 2rem;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: red;
+	transition: 0.2s;
+}
+
+.show {
+	z-index: 10;
+}
+
+.show .go-top-button {
+	animation: popup 0.3s ease-in-out;
+	width: 5.6rem;
+	height: 5.6rem;
+	z-index: 11;
+}
+
+.show i {
+	transform: translate(-50%, -50%) scale(1);
+}	
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
