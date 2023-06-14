@@ -6,23 +6,22 @@
 	margin: 0;
 	box-sizing: border-box;
 	outline: none;
-	transition: 0.2s linear;
+	transition: 0.5s linear;
 }
 
 .html {
 	position: relative;
 	padding: 0;
 	margin: 0;
-	/* overflow-y: auto; */
+	overflow-y: hidden; 
 	overflow-x: hidden;
 	/* font-family: "Montserrat", sans-serif; */
 }
 
 .main {
+	max-width: 1200px;
 	width: 100vw;
-	height: 100vh;
-	/* overflow-y: hidden; */
-	overflow-x: hidden;
+	margin: 0 auto;
 }
 
 .body {
@@ -41,11 +40,17 @@ p h1 h2 h3 h4 h5 h6{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
 .container {
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
-	/*min-height: 100vh;*/
+	min-height: 100vh;
 }
 
 /*=============== NAVBAR ================*/  
@@ -86,8 +91,8 @@ p h1 h2 h3 h4 h5 h6{
 	-webkit-animation: rotate 5s normal linear infinite;
 	animation: rotate 5s normal linear infinite;
 }
-  
-  @keyframes rotate {
+
+@keyframes rotate {
 	0% {
 	  -webkit-transform: rotate3d(0, 0, 1, 0deg);
 	  transform: rotate3d(0, 0, 1, 0deg);
@@ -108,31 +113,25 @@ p h1 h2 h3 h4 h5 h6{
 	  -webkit-transform: rotate3d(0, 0, 1, 360deg);
 	  transform: rotate3d(0, 0, 1, 360deg);
 	}
-  }
-
-/*=============== BANNER ================*/
-
-/* ----- Banner -----*/
-.banner-image {
-	background-size:cover;
-	background-position: center top;
-	background-attachment: fixed;
-	width: 100vw;
-	height: 100vh;
-	transition: all .1s ease-out;
-	animation: banner-image 28s infinite linear;
-	/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
-	-webkit-clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
-	clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
 }
 
-/*.bg-dark { no esta funcionando en ningun bg esta prop 
-	z-index: 20;
+/*=============== BANNER ================*/
+/* ----- Banner -----*/
+.banner {
+	position: relative;
 	width: 100%;
-	background-color: rgb(17, 28, 235);
-}*/
+	height: calc(99vh - 40px);
+	background-size: cover;
+	background-position: center top;
+	transition: all .1s ease-out;
+	background-image: url('img/banner-1.jpg');
+	-webkit-clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
+	clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
+	animation: banner 28s infinite linear;
+	background-attachment: fixed;
+}
 
-@keyframes banner-image{
+@keyframes banner{
 	0%{
 		/* background-image: url('../img/3.1.jpg'); */
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
@@ -157,6 +156,35 @@ p h1 h2 h3 h4 h5 h6{
 	}	
 }
 
+.banner-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 22, 40, 0.232);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .banner-content a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #FFF;
+	padding: 9px 20px;
+	border: 2px solid #7f7b7b;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+	border-radius: 10px;
+} */
+
+/* .banner-content a:hover{
+	background-color: red;
+	font-style: italic;
+
+} */
+
 /* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
 	text-decoration: none ;
@@ -180,10 +208,15 @@ h1{
 	font-family: "Montserrat", sans-serif;
 }
 
+.cuadrado{
+	background-color:rgba(4, 4, 4, 0.454);
+	border-style: solid;
+	border-radius: 5px;
+} 
+
 /* Boton acerca de mi */
 .btn-acercademi {
 	padding: 10px 12px;
-	color: #fff;
 	background-color: rgba(0, 0, 0, 0.455);
 	border-radius: 10px;
 	font-size: 1.5em;
@@ -199,20 +232,29 @@ h1{
 }  
 
 /*=============== Cards ================*/
-.seccion_card {
-	padding: 2rem 0rem 2rem 0rem; 
+.cards {
 	display: flex;
-    justify-content: center;
-	width: fit-content;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cards_item {
+	display: flex;
+	padding: 1rem;
 }
 
 .card {
-    /* centrar vertical y horizontalmente */
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 	position: relative;
     width: 500px;
     height: 350px;
     margin: 20px;
-	left: 10%;
 }
 
 .card .face {
@@ -220,7 +262,7 @@ h1{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     overflow: hidden;
     transition: 1s;
 }
@@ -231,11 +273,9 @@ h1{
 }
 
 .card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-	object-position: cover;
+	height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .card .front h3 {
@@ -248,7 +288,6 @@ h1{
     background: rgba(0, 0, 0, 0.624);
     text-align: center;
 	font-family: "Montserrat", sans-serif;
-
 }
 
 .card .back {
@@ -294,9 +333,9 @@ h1{
     transform: perspective(600px) rotateY(360deg);
 }
 
-/*----------------------------------*/
-/*-------------- FOOTER-------------*/
-/*----------------------------------*/
+/*--------------------------------*/
+/*------------ FOOTER-------------*/
+/*--------------------------------*/
 .footer {
 	padding: 1rem 0 0 0!important;
 	margin: 0;
@@ -376,7 +415,6 @@ h1{
 	transform: translate(-50%, -50%) scale(1);
 }
 
-
 @keyframes popup {
 	0% {
 		width: 0;
@@ -391,7 +429,7 @@ h1{
 		height: 6.6rem;
 	}
 }
-  
+
 /*=======================================================================================================
 =                                        Medias queries                                                  =
 ========================================================================================================*/
@@ -408,7 +446,14 @@ Extra extra large	xxl	≥1400px */
 
 /* http://www.mywonderland.es/curso_js/HTML/mediaqueries.html =* no lo interpreto el css*/
 
+/*  Otro forma de usar  breakpoint
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 768px;
+$breakpoint-smartphone: 375px;
+*/
+
 /* Available breakpoints extra small */
+/* por lo gral utilizan @media screen and (max-width:480px){}*/ 
 @media (min-width: 1px) and (max-width: 320px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
@@ -426,16 +471,23 @@ Extra extra large	xxl	≥1400px */
 }
 
 /* ----- Banner -----*/
+.banner {
+	background-size:cover;
+    background-position: center center;
+}
+
+/* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
 	font-size: 20px!important;
 	font-style: italic;
 }
 
-.banner-image {
-	background-size:cover;
-    background-position: center center;
+.ml3 { /* para efecto del h1*/
+	font-weight: 800;
+	font-size: 1.5em;
 }
 
+/* H3 Span Herramientas */
 .span__herramientas {
 	font-size: calc(12px + 1vw);
 	color: black;
@@ -444,42 +496,72 @@ h1{
 }
 
 .cuadrado{
-	background-color:rgba(4, 4, 4, 0.505);
-	border-style: dashed;
+	background-color:rgba(4, 4, 4, 0.454);
+	border-style: solid;
 	border-radius: 5px;
 }
 
+/* Boton acerca de mi */
 .btn-acercademi {
-	background-color: rgba(0, 0, 0, 0.565);
+	padding: 10px 12px;
+	background-color: rgba(0, 0, 0, 0.455);
+	border-radius: 10px;
+	font-size: 1em;
+	/*font-weight: bold;*/
+	text-decoration: none;
 	border-style: dashed;
-	font-size: 0.8em;
 }
 
+.btn-acercademi:hover {
+	background-color:red;
+	font-style: italic;
+} 
+
 /* ----- Cards -----*/
-.seccion_card {
+.cards {
 	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	justify-items: center;
-	margin: 2.5px;
-	width: 100vw;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .card {
-    position: relative;
-    width: 230px;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+    width: 400px;
     height: 200px;
     margin: 10px;
-	left: -8%;
 }
 
-.card .front img {
+.cards_item {
+    width: 100%;
+	padding: 0.5rem;
+  }
+
+  .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: fill;
-	object-position: cover;
+    backface-visibility: hidden;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+	height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .card .front h3 {
@@ -543,12 +625,12 @@ h1{
 .go-top-button {
 	width: 4px;
 	height: 4px;
-	border-radius: 200%;
+	border-radius: 300%;
 	cursor: pointer;
 	transition: 0.2s;
 	position: absolute;
 	top: 40%;
-	left: 55%;
+	left: 65%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
@@ -571,8 +653,8 @@ h1{
 
 .show .go-top-button {
 	animation: popup 0.3s ease-in-out;
-	width: 5.6rem;
-	height: 5.6rem;
+	width: 3.6rem;
+	height: 3.6rem;
 	z-index: 11;
 }
 
@@ -589,36 +671,33 @@ h1{
 	display: inline;
 }
 
-.navbar-toggler {
-    height: 7px;
-    width:  5px;
-    top: -5%
+.logo {
+	width: 2.5rem;
+	height: 2.5rem;
 }
 
 .marca {
 	font-size: 1.8rem!important;
 }
 
-.logo {
-	width: 2.5rem;
-	height: 2.5rem;
+/* ----- Banner -----*/
+.banner {
+	background-size:cover;
+    background-position: center center;
 }
 
-/* ----- Banner -----*/
+/* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
 	font-size: 30px!important;
 	font-style: italic;
 }
 
-.ml3 {
-	font-size: 1.5em;
+.ml3 { /* para efecto del h1*/
+	font-weight: 800;
+	font-size: 2em;
 }
 
-.banner-image {
-	background-size:cover;
-    background-position: center center;
-}
-
+/* H3 Span Herramientas */
 .span__herramientas {
 	font-size: calc(16px + 1vw);
 	color: black;
@@ -628,40 +707,59 @@ h1{
 
 .cuadrado{
 	background-color:rgba(4, 4, 4, 0.505);
-	border-style: dashed;
+	border-style: solid;
 	border-radius: 5px;
+	width: fit-content;
 }
 
+/* Boton acerca de mi */
 .btn-acercademi {
-	background-color: rgba(0, 0, 0, 0.565);
+	padding: 10px 12px;
+	background-color: rgba(0, 0, 0, 0.455);
+	border-radius: 10px;
+	font-size: 1.3em;
+	/*font-weight: bold;*/
+	text-decoration: none;
 	border-style: dashed;
-	font-size: 1em;
 }
+
+.btn-acercademi:hover {
+	background-color:red;
+	font-style: italic;
+} 
 
 /* ----- Cards -----*/
-.seccion_card {
+.cards {
 	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	justify-items: center;
-	margin: 5px;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cards_item {
+    width: 100%;
+	padding: 0.6rem;
 }
 
 .card {
-    position: relative;
-    width: 330px;
-    height: 250px;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+    width: 80%;
+    height: 200px;
     margin: 10px;
-	left: -8%;
 }
 
-.card .face {
+  .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     overflow: hidden;
     transition: 1s;
 }
@@ -672,16 +770,14 @@ h1{
 }
 
 .card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-	object-position: cover;
+	height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .card .front h3 {
     position: absolute;
-    top: 75%;
+    top: 70%;
     width: 100%;
     height: 65px;
     line-height: 55px;
@@ -727,19 +823,7 @@ h1{
 	font-size: 12px!important;
 } 
 
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-}
-
-.bg-dark{
-	background-color:transparent!important;
-	}	
-
-/* ----- Boton Arriba -----*/
+/*----- Boton Arriba -----*/
 .go-top-container {
 	position: fixed;
 	bottom: 2rem;
@@ -780,8 +864,8 @@ h1{
 
 .show .go-top-button {
 	animation: popup 0.3s ease-in-out;
-	width: 5.6rem;
-	height: 5.6rem;
+	width: 5rem;
+	height: 5rem;
 	z-index: 11;
 }
 
@@ -791,11 +875,16 @@ h1{
 }
 
 /* Available breakpoints medium, large, extra large and extra extra large */
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
 	font-size: 25px!important;
 	display: inline;
+}
+
+.logo {
+	width: 3.5rem;
+	height: 4rem;
 }
 
 .marca {
@@ -803,26 +892,23 @@ h1{
 }
 
 /* ----- Banner -----*/
+.banner {
+	background-size:cover;
+    background-position: center center;
+}
+
+/* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
 	font-size: 35px!important;
 	font-style: italic;
 }
 
-.ml3 {
-	font-size: 2.5rem;
+.ml3 { /* para efecto del h1*/
+	font-weight: 800;
+	font-size: 2.5em;
 }
 
-.banner-image {
-	background-size:cover;
-    background-position: center center;
-	height: 60vh!important;
-}
-
-.logo {
-		width: 3.5rem;
-		height: 4rem;
-}
-
+/* H3 Span Herramientas */
 .span__herramientas {
 	font-size: calc(16px + 1vw);
 	color: black;
@@ -837,28 +923,46 @@ h1{
 	width: fit-content;
 }
 
+/* Boton acerca de mi */
 .btn-acercademi {
-	background-color: rgba(0, 0, 0, 0.565);
+	padding: 10px 12px;
+	background-color: rgba(0, 0, 0, 0.455);
+	border-radius: 10px;
+	font-size: 1.5em;
+	/*font-weight: bold;*/
+	text-decoration: none;
 	border-style: dashed;
-	font-size: 1.5rem;
 }
 
+.btn-acercademi:hover {
+	background-color:red;
+	font-style: italic;
+} 
+
 /* ----- Cards -----*/
-.seccion_card {
+.cards {
 	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	justify-items: center;
-	margin: 5px;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .card {
-    position: relative;
-    width: 400px;
-    height: 250px;
-    margin: 10px;
-	left: -5%;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 15px;
+}
+
+.cards_item {
+	display: flex;
+	padding: 0.5rem;
 }
 
 .card .face {
@@ -866,7 +970,7 @@ h1{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     overflow: hidden;
     transition: 1s;
 }
@@ -877,16 +981,14 @@ h1{
 }
 
 .card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-	object-position: cover;
+	height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .card .front h3 {
     position: absolute;
-    top: 80%;
+    top: 83%;
     width: 100%;
     height: 65px;
     line-height: 55px;
@@ -894,7 +996,6 @@ h1{
     background: rgba(0, 0, 0, 0.624);
     text-align: center;
 	font-family: "Montserrat", sans-serif;
-	font-size: 18px;
 }
 
 .card .back {
@@ -920,8 +1021,8 @@ h1{
 }
 
 .card .back h3 {
-    font-size: 18px;
-    margin-top: 3px;
+    font-size: 45px;
+    margin-top: 20px;
     letter-spacing: 2px;
 	font-weight:bold ;
 	font-family: "Montserrat", sans-serif;
@@ -929,7 +1030,7 @@ h1{
 
 .card .back p {
     letter-spacing: 1px;
-	font-size: 12px!important;
+	font-family: "Montserrat", sans-serif;
 } 
 
 .card:hover .front {
@@ -940,12 +1041,5 @@ h1{
     transform: perspective(600px) rotateY(360deg);
 }
 
-/* ----- Cards -----*/
-.main {
-	width: 100vw;
-	height: fit-content;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
 }
 
