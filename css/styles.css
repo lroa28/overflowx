@@ -534,7 +534,7 @@ h1{
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
-    width: 100%;
+    width: 250px;
     height: 200px;
     margin: 10px; 
 }
@@ -560,9 +560,10 @@ h1{
 }
 
 .card .front img {
-	height: 100%;
-	max-width: 100%;
-	vertical-align: middle;
+	width: fit-content;
+	object-fit: cover;
+	object-position: center;
+	/* vertical-align: middle; */
 }
 
 .card .front h3 {
