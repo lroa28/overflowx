@@ -22,6 +22,7 @@
 	max-width: 1200px;
 	width: 100vw;
 	margin: 0 auto;
+	overflow-x: hidden; 
 }
 
 .body {
@@ -46,12 +47,12 @@ img {
 	vertical-align: middle;
 }
 
-.container {
+/* .container {
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
 	min-height: 100vh;
-}
+} */
 
 /*=============== NAVBAR ================*/  
 .navbar {
@@ -524,6 +525,7 @@ h1{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .card {
@@ -535,7 +537,7 @@ h1{
 	position: relative;
     width: 400px;
     height: 200px;
-    margin: 10px;
+    margin: 10px; 
 }
 
 .cards_item {
@@ -574,7 +576,7 @@ h1{
     background: rgba(0, 0, 0, 0.624);
     text-align: center;
 	font-family: "Montserrat", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .card .back {
@@ -600,7 +602,7 @@ h1{
 }
 
 .card .back h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 3px;
     letter-spacing: 2px;
 	font-weight:bold ;
@@ -609,7 +611,7 @@ h1{
 
 .card .back p {
     letter-spacing: 1px;
-	font-size: 12px!important;
+	font-size: 10px!important;
 } 
 
 /* ----- Boton Arriba -----*/
@@ -749,7 +751,7 @@ h1{
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
-    width: 80%;
+    width: 80%; 
     height: 200px;
     margin: 10px;
 }
@@ -811,7 +813,7 @@ h1{
 }
 
 .card .back h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 3px;
     letter-spacing: 2px;
 	font-weight:bold ;
@@ -820,7 +822,7 @@ h1{
 
 .card .back p {
     letter-spacing: 1px;
-	font-size: 12px!important;
+	font-size: 11px!important;
 } 
 
 /*----- Boton Arriba -----*/
@@ -955,9 +957,9 @@ h1{
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
-    width: 500px;
+    width: 400px;
     height: 350px;
-    margin: 15px;
+    margin: 15px; 
 }
 
 .cards_item {
@@ -1021,7 +1023,7 @@ h1{
 }
 
 .card .back h3 {
-    font-size: 45px;
+    font-size: 25px;
     margin-top: 20px;
     letter-spacing: 2px;
 	font-weight:bold ;
