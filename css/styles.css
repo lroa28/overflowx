@@ -41,11 +41,11 @@ p h1 h2 h3 h4 h5 h6{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img {
+/* img {
 	height: auto;
 	max-width: 100%;
 	vertical-align: middle;
-}
+} */
 
 /* .container {
 	width: 100%;
@@ -216,12 +216,13 @@ h1{
 } 
 
 /* Boton acerca de mi */
-.btn-acercademi {
+
+/* .btn-acercademi {
 	padding: 10px 12px;
 	background-color: rgba(0, 0, 0, 0.455);
 	border-radius: 10px;
 	font-size: 1.5em;
-	/*font-weight: bold;*/
+	font-weight: bold;
 	text-decoration: none;
 	border-style: dashed;
 }
@@ -230,20 +231,25 @@ h1{
 	color: #fff;
 	background-color:red;
 	font-style: italic;
-}  
+}   */
 
 /*=============== Cards ================*/
-.cards {
+/* .cards {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+} */
+.columna {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .cards_item {
 	display: flex;
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 
 .card {
@@ -502,31 +508,7 @@ h1{
 	border-radius: 5px;
 }
 
-/* Boton acerca de mi */
-.btn-acercademi {
-	padding: 10px 12px;
-	background-color: rgba(0, 0, 0, 0.455);
-	border-radius: 10px;
-	font-size: 1em;
-	/*font-weight: bold;*/
-	text-decoration: none;
-	border-style: dashed;
-}
-
-.btn-acercademi:hover {
-	background-color:red;
-	font-style: italic;
-} 
-
 /* ----- Cards -----*/
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .card {
 	border-radius: 0.25rem;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -534,17 +516,16 @@ h1{
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
-    width: 250px;
+    width: 100%;
     height: 200px;
     margin: 10px; 
 }
 
 .cards_item {
     width: 100%;
-	padding: 0.5rem;
-  }
+}
 
-  .card .face {
+.card .face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -714,31 +695,7 @@ h1{
 	width: fit-content;
 }
 
-/* Boton acerca de mi */
-.btn-acercademi {
-	padding: 10px 12px;
-	background-color: rgba(0, 0, 0, 0.455);
-	border-radius: 10px;
-	font-size: 1.3em;
-	/*font-weight: bold;*/
-	text-decoration: none;
-	border-style: dashed;
-}
-
-.btn-acercademi:hover {
-	background-color:red;
-	font-style: italic;
-} 
-
 /* ----- Cards -----*/
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .cards_item {
     width: 100%;
 	padding: 0.6rem;
@@ -925,31 +882,7 @@ h1{
 	width: fit-content;
 }
 
-/* Boton acerca de mi */
-.btn-acercademi {
-	padding: 10px 12px;
-	background-color: rgba(0, 0, 0, 0.455);
-	border-radius: 10px;
-	font-size: 1.5em;
-	/*font-weight: bold;*/
-	text-decoration: none;
-	border-style: dashed;
-}
-
-.btn-acercademi:hover {
-	background-color:red;
-	font-style: italic;
-} 
-
 /* ----- Cards -----*/
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .card {
 	border-radius: 0.25rem;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
