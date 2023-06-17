@@ -34,11 +34,11 @@
 
 .a {
 	text-decoration: none;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 p h1 h2 h3 h4 h5 h6{
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat", sans-serif!important;
 }
 
 /* img {
@@ -116,6 +116,11 @@ p h1 h2 h3 h4 h5 h6{
 	}
 }
 
+.navbar-toggler-icon {
+	width: 20px;
+	height: 20px;
+}
+
 /*=============== BANNER ================*/
 /* ----- Banner -----*/
 .banner {
@@ -188,16 +193,27 @@ p h1 h2 h3 h4 h5 h6{
 
 /* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
-	text-decoration: none ;
 	color: red;
 	/* color: antiquewhite; */
-	/* font-size: calc(0.2rem + 3vw);*/
+	font-size: calc(2.5rem + 3vw)!important;
 	font-style: italic;
+	font-weight: bold!important;
+	font-weight: 10rem!important;
+}
+
+/* ----- Titulo LCR -----*/
+.titulolcr{
+	font-size: calc(16px + 1vw)!important;
+	color:pink;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
 }
 
 .ml3 { /* para efecto del h1*/
-	font-weight: 800;
-	font-size: 3.5em;
+	font-weight: 600px;
+	font-size: 2.5em;
 }
 
 /* H3 Span Herramientas */
@@ -474,7 +490,7 @@ $breakpoint-smartphone: 375px;
 }
 
 .marca {
-	font-size: 1rem!important;
+	font-size: 1.2rem!important;
 }
 
 /* ----- Banner -----*/
@@ -485,13 +501,27 @@ $breakpoint-smartphone: 375px;
 
 /* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
-	font-size: 20px!important;
+	color: red;
+	/* color: antiquewhite; */
+	font-size: calc(1.5rem + 2vw)!important;
 	font-style: italic;
+	font-weight: bold!important;
+	font-weight: 8rem!important;
+}
+
+/* ----- Titulo LCR -----*/
+.titulolcr{
+	font-size: calc(12px + 0.5vw)!important;
+	color:pink;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
 }
 
 .ml3 { /* para efecto del h1*/
-	font-weight: 800;
-	font-size: 1.5em;
+	font-weight: 600px;
+	font-size: 2.5em;
 }
 
 /* H3 Span Herramientas */
@@ -671,13 +701,27 @@ h1{
 
 /* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
-	font-size: 30px!important;
+	color: red;
+	/* color: antiquewhite; */
+	font-size: calc(1.8rem + 3vw)!important;
 	font-style: italic;
+	font-weight: bold!important;
+	font-weight: 10rem!important;
+}
+
+/* ----- Titulo LCR -----*/
+.titulolcr{
+	font-size: calc(14px + 1vw)!important;
+	color:pink;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
 }
 
 .ml3 { /* para efecto del h1*/
-	font-weight: 800;
-	font-size: 2em;
+	font-weight: 600px;
+	font-size: 2.5em;
 }
 
 /* H3 Span Herramientas */
@@ -858,12 +902,26 @@ h1{
 
 /* ----- H1 Titulo DESARROLLO WEB -----*/
 h1{
-	font-size: 35px!important;
+	color: red;
+	/* color: antiquewhite; */
+	font-size: calc(3rem + 3vw)!important;
 	font-style: italic;
+	font-weight: bold!important;
+	font-weight: 10rem!important;
+}
+
+/* ----- Titulo LCR -----*/
+.titulolcr{
+	font-size: calc(16px + 1vw)!important;
+	color:pink;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
 }
 
 .ml3 { /* para efecto del h1*/
-	font-weight: 800;
+	font-weight: 600px;
 	font-size: 2.5em;
 }
 
