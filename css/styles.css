@@ -472,7 +472,7 @@ $breakpoint-smartphone: 375px;
 
 /* Available breakpoints extra small */
 /* por lo gral utilizan @media screen and (max-width:480px){}*/ 
-@media (min-width: 1px) and (max-width: 320px) and (orientation : landscape) {
+@media (min-width: 1px) and (max-width: 320px) and (orientation : portrait) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
 	font-size: 15px!important;
