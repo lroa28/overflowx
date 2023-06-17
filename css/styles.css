@@ -677,7 +677,7 @@ h1{
 }
 
 /* Available breakpoints sm - small */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
 	font-size: 19px!important;
@@ -883,7 +883,7 @@ h1{
 }
 
 /* Available breakpoints medium, large, extra large and extra extra large */
-@media (min-width: 768px) and (max-width: 1400px) {
+@media (min-width: 769px) and (max-width: 1400px) {
 /* ----- NavBar -----*/
 .navbar-nav li a{ 
 	font-size: 25px!important;
