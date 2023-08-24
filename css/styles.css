@@ -15,7 +15,6 @@
 	margin: 0;
 	overflow-y: hidden; 
 	overflow-x: hidden;
-	/* font-family: "Montserrat", sans-serif; */
 }
 
 .body {
@@ -34,11 +33,10 @@
 
 .a {
 	text-decoration: none;
-
 }
 
 p h1 h2 h3 h4 h5 h6{
-    font-family: "Montserrat", sans-serif!important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
 /* img {
@@ -60,10 +58,22 @@ p h1 h2 h3 h4 h5 h6{
 }
 
 .marca {
-	font-family: 'Courier New', Courier, monospace;  
-    font-size: 2.5rem!important;
-	font-weight: bold;
-	text-shadow: 0 0 15px  rgb(143, 228, 236), 0 0 15px #060606;
+	font-size: calc(10px + 1vw)!important;
+	color:black;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
+}
+
+/* ----- Titulo LCR -----*/
+.titulolcr{
+	font-size: calc(10px + 1vw)!important;
+	color:black;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
 }
 
 .navbar-nav li a{ 
@@ -75,14 +85,15 @@ p h1 h2 h3 h4 h5 h6{
 .navbar-nav li a:hover{
     /*box-shadow: 2px -1px 5px 15px  rgba(70, 180, 217, 0.477);*/
 	background-color: rgb(143, 228, 236);
-    /*text-decoration: underline ;*/
     transition: all 1s ease-out;
 	border-radius: 3px;
+	color: #000!important;
 }
 
 .logo {
-	width: 4rem;
-	height: 3.5rem;
+	width: 5rem;
+	height: 5rem;
+	object-fit: contain;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––– */
@@ -117,45 +128,48 @@ p h1 h2 h3 h4 h5 h6{
 }
 
 /*=============== BANNER ================*/
-/* ----- Banner -----*/
+/* ----- Img Banner Principal de la page -----*/
 .banner {
 	position: relative;
 	width: 100%;
-	height: calc(99vh - 40px);
+	height: calc(99vh - 30px);
 	background-size: cover;
 	background-position: center top;
 	transition: all .1s ease-out;
-	background-image: url('img/banner-1.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner2.jpg');
 	-webkit-clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
 	clip-path: polygon(100% 0, 100% 91%, 68% 91%, 0 100%, 0 0);
-	animation: banner 28s infinite linear;
+	/* animation: banner 28s infinite linear; */
 	background-attachment: fixed;
 }
 
-@keyframes banner{
+/* @keyframes banner{
 	0%{
-		/* background-image: url('../img/3.1.jpg'); */
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
 	}
 	25%{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
 	}
 	26%{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner2.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
 	}
 	50%{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
+	}
+	51%{
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner2.jpg');
 	}
 	75%{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner2.jpg');
 	}
 	76%{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner1.jpg');
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner2.jpg');
 	}
 	100%{
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner2.jpg');
-	}	
-}
+	}
+} 
+*/
 
 .banner-content{
 	margin: 0;
@@ -196,16 +210,6 @@ h1{
 	font-weight: 10rem!important;
 }
 
-/* ----- Titulo LCR -----*/
-.titulolcr{
-	font-size: calc(16px + 1vw)!important;
-	color:pink;
-	font-weight: bold!important;
-    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-	padding: 10px;
-}
-
 .ml3 { /* para efecto del h1*/
 	font-weight: 600px;
 	font-size: 2.5em;
@@ -215,6 +219,7 @@ h1{
 .span__herramientas {
 	font-size: calc(16px + 1vw);
 	color: black;
+	/*text-decoration: underline;*/
 	font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
 	font-family: "Montserrat", sans-serif;
@@ -222,7 +227,7 @@ h1{
 
 .cuadrado{
 	background-color:rgba(4, 4, 4, 0.454);
-	border-style: solid;
+	border-style: dashed;
 	border-radius: 5px;
 }
 
@@ -252,11 +257,11 @@ h1{
 	margin: 0;
 	padding: 0;
 } */
-.columna {
+/*.columna {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+}*/
 
 .cards_item {
 	display: flex;
@@ -282,7 +287,7 @@ h1{
     backface-visibility: hidden;
     border-radius: 0.25rem;
     overflow: hidden;
-    transition: 1s;
+    transition: 3s;
 }
 
 .card .front {
@@ -293,7 +298,8 @@ h1{
 .card .front img {
 	height: 100%;
 	max-width: 100%;
-	vertical-align: middle;
+	vertical-align: baseline;
+	object-fit: fill;
 }
 
 .card .front h3 {
@@ -305,7 +311,6 @@ h1{
     color: #fff;
     background: rgba(0, 0, 0, 0.624);
     text-align: center;
-	font-family: "Montserrat", sans-serif;
 }
 
 .card .back {
@@ -335,12 +340,10 @@ h1{
     margin-top: 20px;
     letter-spacing: 2px;
 	font-weight:bold ;
-	font-family: "Montserrat", sans-serif;
 }
 
 .card .back p {
     letter-spacing: 1px;
-	font-family: "Montserrat", sans-serif;
 } 
 
 .card:hover .front {
@@ -405,7 +408,7 @@ h1{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: rgba(0, 0, 0, 0.52);
+	background-color: black;
 }
 
 .go-top-button i {
@@ -480,8 +483,9 @@ $breakpoint-smartphone: 375px;
 }
 
 .logo {
-	width: 2rem;
-	height: 2.5rem;
+	width: 2.5rem;
+	height: 3rem;
+	object-fit: cover;
 }
 
 .marca {
@@ -507,6 +511,9 @@ h1{
 	font-style: italic;
 	font-weight: bold!important;
 	font-weight: 8rem!important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* ----- Titulo LCR -----*/
@@ -539,6 +546,11 @@ h1{
 }
 
 /* ----- Cards -----*/
+
+.cards_item {
+    width: 100%;
+}
+
 .card {
 	border-radius: 0.25rem;
 	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -546,13 +558,12 @@ h1{
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
-    width: 100%;
-    height: 200px;
-    margin: 10px; 
-}
-
-.cards_item {
-    width: 100%;
+    /*width: 400px;
+    height: 90%;
+    margin: 10px; */
+    width: 500px;
+    height: 350px;
+    margin: 20px;
 }
 
 .card .face {
@@ -562,7 +573,7 @@ h1{
     backface-visibility: hidden;
     border-radius: 0.25rem;
     overflow: hidden;
-    transition: 1s;
+    transition: 2s;
 }
 
 .card .front {
@@ -571,10 +582,10 @@ h1{
 }
 
 .card .front img {
-	width: fit-content;
-	object-fit: cover;
-	object-position: center;
-	/* vertical-align: middle; */
+	height: 100%!important;
+	max-width: 80%!important;
+	vertical-align: baseline!important;
+	object-fit: fill!important;
 }
 
 .card .front h3 {
@@ -586,7 +597,6 @@ h1{
     color: #fff;
     background: rgba(0, 0, 0, 0.624);
     text-align: center;
-	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 }
 
@@ -617,7 +627,6 @@ h1{
     margin-top: 3px;
     letter-spacing: 2px;
 	font-weight:bold ;
-	font-family: "Montserrat", sans-serif;
 }
 
 .card .back p {
@@ -647,7 +656,7 @@ h1{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: rgba(0, 0, 0, 0.27);
+	background-color: black;
 }
 
 .go-top-button i {
@@ -685,8 +694,9 @@ h1{
 }
 
 .logo {
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 3rem;
+	height: 3rem;
+	object-fit: contain;
 }
 
 .marca {
@@ -762,6 +772,13 @@ h1{
     margin: 10px;
 }
 
+.card .front img {
+	height: 100%;
+	max-width: 100%;
+	vertical-align: baseline;
+	object-fit: fill;
+}
+
   .card .face {
     position: absolute;
     width: 100%;
@@ -775,12 +792,6 @@ h1{
 .card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
-}
-
-.card .front img {
-	height: 100%;
-	max-width: 100%;
-	vertical-align: middle;
 }
 
 .card .front h3 {
@@ -853,7 +864,7 @@ h1{
 	transform: translate(-50%, -50%);
 	z-index: -1;
 	display: block;
-	background-color: rgba(0, 0, 0, 0.468);
+	background-color: black;
 }
 
 .go-top-button i {
@@ -885,18 +896,29 @@ h1{
 /* Available breakpoints medium, large, extra large and extra extra large */
 @media (min-width: 769px) and (max-width: 1400px) {
 /* ----- NavBar -----*/
-.navbar-nav li a{ 
-	font-size: 25px!important;
-	display: inline;
-}
-
 .logo {
-	width: 3.5rem;
+	width: 4.5rem;
 	height: 4rem;
+	object-fit: cover;
 }
 
 .marca {
-	font-size: 2.5rem!important;
+	font-size: 1.5rem!important;
+}
+
+/* ----- Titulo LCR -----*/
+.titulolcr{
+	font-size: calc(8px + 1vw)!important;
+	color:black;
+	font-weight: bold!important;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #4f4f56;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	padding: 10px;
+}
+
+.navbar-nav li a{ 
+	font-size: 25px!important;
+	display: inline;
 }
 
 .navbar-toggler-icon {
@@ -968,6 +990,12 @@ h1{
     margin: 15px; 
 }
 
+.card .front img {
+	width: fit-content;
+	object-fit: contain;
+	object-position: center;
+}
+
 .card .face {
     position: absolute;
     width: 100%;
@@ -986,7 +1014,8 @@ h1{
 .card .front img {
 	height: 100%;
 	max-width: 100%;
-	vertical-align: middle;
+	vertical-align: baseline;
+	object-fit: fill;
 }
 
 .card .front h3 {
@@ -1045,4 +1074,4 @@ h1{
 }
 
 }
-
+/* Fin @media (min-width: 769px) and (max-width: 1400px) breakpoints medium, large, extra large and extra extra large */
