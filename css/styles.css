@@ -217,7 +217,7 @@ h1{
 	font-size: 2.5em;
 }
 
-/* ----- H1 Titulo DESARROLLO WEB -----*/
+/* ----- Titulo Risk Manager -----*/
 h2{
 	color: red;
 	/* color: antiquewhite; */
@@ -518,8 +518,8 @@ $breakpoint-smartphone: 375px;
 	height: calc(59vh - 30px);
 }
 
-/* ----- H1 Titulo DESARROLLO WEB -----*/
-h1{
+/* ----- H1 y H2 Titulos -----*/
+h1 h2{
 	font-size: calc(1.5rem + 2vw)!important;
 	font-style: italic;
 	font-weight: bold!important;
